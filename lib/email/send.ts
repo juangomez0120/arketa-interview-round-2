@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { fakemailClient } from "./provider";
+import { fakeMailAdapter } from "./provider";
 import type { EmailKind } from "../types";
 
 const LOG_PATH = path.join(process.cwd(), "logs.txt");
@@ -21,7 +21,7 @@ export async function sendEmail(args: {
     clientId: args.clientId,
     email: args.to,
   });
-  const result = await fakemailClient.send({ to: args.to });
+  const result = await fakeMailAdapter.send({ to: args.to });
   await appendLog({
     level: "INFO",
     msg: "Email sent",

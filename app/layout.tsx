@@ -12,6 +12,7 @@ const navItems = [
   { href: "/clients", label: "Clients" },
   { href: "/offerings", label: "Offerings" },
   { href: "/promos", label: "Promo codes" },
+  { href: "/charges", label: "Charges" },
 ];
 
 export default function RootLayout({

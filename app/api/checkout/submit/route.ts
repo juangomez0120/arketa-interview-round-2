@@ -1,17 +1,30 @@
+import { randomUUID } from "node:crypto";
 import { db } from "@/lib/db";
 import { buildCart } from "@/lib/cart";
 import { applyPromo } from "@/lib/promo";
+import type { Cart } from "@/lib/types";
 
 export async function POST(req: Request) {
   const { clientId, offeringId, classId, promoCode } = await req.json();
 
   const cart = await buildCart({ clientId, offeringId, classId });
   const promo = promoCode ? await db.promos.findByCode(promoCode) : null;
-  const result = applyPromo(cart, promo);
+
+  // assign a unique id per line item for the charge record
+  const orderCart: Cart = {
+    products: cart.products.map((p) => ({
+      productId: randomUUID(),
+      type: p.type,
+      price: p.price,
+      parentProductId: p.parentProductId,
+    })),
+  };
+
+  const result = applyPromo(orderCart, promo);
 
   const charge = await db.charges.create({
     clientId,
-    items: cart.products,
+    items: orderCart.products,
     subtotal: result.subtotal,
     discount: result.discount,
     total: result.total,

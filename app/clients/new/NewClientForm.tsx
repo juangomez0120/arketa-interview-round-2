@@ -44,7 +44,7 @@ export default function NewClientForm() {
         <label className="block text-sm font-medium text-zinc-700">Email</label>
         <input
           required
-          type="email"
+          type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="mt-1 w-full px-3 py-2 border border-zinc-300 rounded text-sm"

@@ -5,13 +5,16 @@ export async function buildCart(input: {
   clientId: string;
   offeringId: string;
   classId?: string;
+  quantity?: number;
 }): Promise<Cart> {
   const offering = await db.offerings.findById(input.offeringId);
   if (!offering) throw new Error(`Offering ${input.offeringId} not found`);
 
-  const products: CartProduct[] = [
-    { productId: offering.id, type: offering.type, price: offering.price },
-  ];
+  const quantity = Math.max(1, Math.floor(input.quantity ?? 1));
+  const products: CartProduct[] = [];
+  for (let i = 0; i < quantity; i++) {
+    products.push({ productId: offering.id, type: offering.type, price: offering.price });
+  }
 
   if (input.classId && offering.type === "classPack") {
     const cls = await db.classes.findById(input.classId);

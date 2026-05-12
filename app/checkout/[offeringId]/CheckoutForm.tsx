@@ -28,6 +28,7 @@ export default function CheckoutForm({
   const router = useRouter();
   const [clientId, setClientId] = useState(clients[0]?.id ?? "");
   const [classId, setClassId] = useState<string>("");
+  const [quantity, setQuantity] = useState(1);
   const [promoCode, setPromoCode] = useState("");
   const [quote, setQuote] = useState<Quote | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -48,6 +49,7 @@ export default function CheckoutForm({
           clientId,
           offeringId: offering.id,
           classId: classId || undefined,
+          quantity,
           promoCode: promoCode.trim() || undefined,
         }),
         signal: controller.signal,
@@ -62,7 +64,7 @@ export default function CheckoutForm({
       /* aborted */
     });
     return () => controller.abort();
-  }, [clientId, classId, promoCode, offering.id]);
+  }, [clientId, classId, promoCode, quantity, offering.id]);
 
   async function onConfirm() {
     setSubmitting(true);
@@ -74,6 +76,7 @@ export default function CheckoutForm({
         clientId,
         offeringId: offering.id,
         classId: classId || undefined,
+        quantity,
         promoCode: promoCode.trim() || undefined,
       }),
     });
@@ -141,6 +144,18 @@ export default function CheckoutForm({
           </select>
         </div>
       )}
+
+      <div>
+        <label className="block text-sm font-medium text-zinc-700">Quantity</label>
+        <input
+          type="number"
+          min={1}
+          max={20}
+          value={quantity}
+          onChange={(e) => setQuantity(Math.max(1, Number(e.target.value) || 1))}
+          className="mt-1 w-24 px-3 py-2 border border-zinc-300 rounded text-sm"
+        />
+      </div>
 
       <div>
         <label className="block text-sm font-medium text-zinc-700">Promo code</label>

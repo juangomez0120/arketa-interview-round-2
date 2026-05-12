@@ -5,9 +5,9 @@ import { applyPromo } from "@/lib/promo";
 import type { Cart } from "@/lib/types";
 
 export async function POST(req: Request) {
-  const { clientId, offeringId, classId, promoCode } = await req.json();
+  const { clientId, offeringId, classId, promoCode, quantity } = await req.json();
 
-  const cart = await buildCart({ clientId, offeringId, classId });
+  const cart = await buildCart({ clientId, offeringId, classId, quantity });
   const promo = promoCode ? await db.promos.findByCode(promoCode) : null;
 
   // assign a unique id per line item for the charge record

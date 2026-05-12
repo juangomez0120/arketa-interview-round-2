@@ -47,8 +47,10 @@ export default async function ChargesPage() {
               </div>
 
               <ul className="mt-4 text-sm border-t border-zinc-100 pt-3 space-y-1">
-                {charge.items.map((item, i) => (
-                  <li key={i} className="flex justify-between">
+                {Array.from(
+                  new Map(charge.items.map((item) => [item.productId, item])).values(),
+                ).map((item) => (
+                  <li key={item.productId} className="flex justify-between">
                     <span>
                       {typeLabel(item.type)}
                       {item.parentProductId ? " (covered by pack)" : ""}

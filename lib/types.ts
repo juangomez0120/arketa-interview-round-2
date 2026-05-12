@@ -14,13 +14,6 @@ export type Offering = {
   price: number;
 };
 
-export type ClassInstance = {
-  id: string;
-  name: string;
-  offeringId: string;
-  startsAt: string;
-};
-
 export type PromoCode = {
   code: string;
   discountPercent: number;

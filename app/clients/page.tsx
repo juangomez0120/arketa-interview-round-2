@@ -1,52 +1,89 @@
 import Link from "next/link";
+import { ArrowUpRight, Plus } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { PageHero } from "@/components/page-hero";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { db } from "@/lib/db";
+
+const fmtDate = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
 
 export default async function ClientsPage() {
   const clients = await db.clients.all();
+  const sorted = [...clients].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
 
   return (
-    <div className="max-w-4xl">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold tracking-tight">Clients</h1>
-        <Link
-          href="/clients/new"
-          className="text-sm font-medium px-3 py-2 rounded bg-zinc-900 text-white hover:bg-zinc-700"
-        >
-          New client
-        </Link>
-      </div>
+    <div>
+      <PageHero
+        title="Clients"
+        description="Studio members."
+        actions={
+          <Button asChild>
+            <Link href="/clients/new">
+              <Plus /> New client
+            </Link>
+          </Button>
+        }
+      />
 
-      <div className="mt-6 bg-white border border-zinc-200 rounded">
-        <table className="w-full text-sm">
-          <thead className="text-left text-zinc-500 border-b border-zinc-200">
-            <tr>
-              <th className="px-4 py-3 font-medium">Name</th>
-              <th className="px-4 py-3 font-medium">Email</th>
-              <th className="px-4 py-3 font-medium">Joined</th>
-              <th className="px-4 py-3" />
-            </tr>
-          </thead>
-          <tbody>
-            {clients.map((c) => (
-              <tr key={c.id} className="border-b border-zinc-100 last:border-0">
-                <td className="px-4 py-3 font-medium">{c.name}</td>
-                <td className="px-4 py-3 text-zinc-600">{c.email}</td>
-                <td className="px-4 py-3 text-zinc-500">
-                  {new Date(c.createdAt).toLocaleDateString()}
-                </td>
-                <td className="px-4 py-3 text-right">
-                  <Link
-                    href={`/clients/${c.id}`}
-                    className="text-sm font-medium text-blue-600 hover:underline"
-                  >
-                    View →
-                  </Link>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <Card className="overflow-hidden">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[40%]">Name</TableHead>
+              <TableHead>Email</TableHead>
+              <TableHead>Joined</TableHead>
+              <TableHead className="text-right pr-6"></TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {sorted.map((c) => {
+              const isNew = c.createdAt >= thirtyDaysAgo;
+              return (
+                <TableRow key={c.id}>
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <span className="font-medium">{c.name}</span>
+                      {isNew && <Badge variant="secondary">New</Badge>}
+                    </div>
+                  </TableCell>
+                  <TableCell className="text-muted-foreground">{c.email}</TableCell>
+                  <TableCell className="text-muted-foreground">
+                    {fmtDate.format(new Date(c.createdAt))}
+                  </TableCell>
+                  <TableCell className="text-right pr-6">
+                    <Button asChild variant="ghost" size="sm">
+                      <Link href={`/clients/${c.id}`}>
+                        Open <ArrowUpRight />
+                      </Link>
+                    </Button>
+                  </TableCell>
+                </TableRow>
+              );
+            })}
+            {sorted.length === 0 && (
+              <TableRow>
+                <TableCell colSpan={4} className="py-10 text-center text-muted-foreground">
+                  No clients yet.
+                </TableCell>
+              </TableRow>
+            )}
+          </TableBody>
+        </Table>
+      </Card>
     </div>
   );
 }

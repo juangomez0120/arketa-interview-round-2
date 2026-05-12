@@ -1,5 +1,16 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { PageHero } from "@/components/page-hero";
 import { db } from "@/lib/db";
+
+const fmt = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
 
 export default async function ClientProfilePage({
   params,
@@ -11,26 +22,33 @@ export default async function ClientProfilePage({
   if (!client) notFound();
 
   return (
-    <div className="max-w-2xl">
-      <h1 className="text-2xl font-semibold tracking-tight">{client.name}</h1>
-      <p className="mt-1 text-sm text-zinc-500">Client profile</p>
+    <div>
+      <div className="mb-6">
+        <Button asChild variant="ghost" size="sm">
+          <Link href="/clients">
+            <ArrowLeft /> All clients
+          </Link>
+        </Button>
+      </div>
 
-      <div className="mt-6 bg-white border border-zinc-200 rounded p-5">
-        <dl className="text-sm space-y-2">
-          <div className="flex justify-between">
-            <dt className="text-zinc-500">Client ID</dt>
-            <dd className="font-mono">{client.id}</dd>
+      <PageHero title={client.name} description="Client profile." />
+
+      <Card className="p-6">
+        <dl className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+          <div>
+            <dt className="eyebrow">Client ID</dt>
+            <dd className="mt-1.5 font-mono">{client.id}</dd>
           </div>
-          <div className="flex justify-between">
-            <dt className="text-zinc-500">Email</dt>
-            <dd>{client.email}</dd>
+          <div>
+            <dt className="eyebrow">Email</dt>
+            <dd className="mt-1.5">{client.email}</dd>
           </div>
-          <div className="flex justify-between">
-            <dt className="text-zinc-500">Joined</dt>
-            <dd>{new Date(client.createdAt).toLocaleString()}</dd>
+          <div>
+            <dt className="eyebrow">Joined</dt>
+            <dd className="mt-1.5">{fmt.format(new Date(client.createdAt))}</dd>
           </div>
         </dl>
-      </div>
+      </Card>
     </div>
   );
 }

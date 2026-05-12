@@ -2,7 +2,18 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { AlertCircle, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 import type { Offering } from "@/lib/types";
+
+function money(cents: number): string {
+  return `$${(cents / 100).toFixed(2)}`;
+}
 
 export default function NewPromoForm({ offerings }: { offerings: Offering[] }) {
   const router = useRouter();
@@ -14,7 +25,7 @@ export default function NewPromoForm({ offerings }: { offerings: Offering[] }) {
 
   function toggleOffering(id: string) {
     setAppliesTo((prev) =>
-      prev.includes(id) ? prev.filter((o) => o !== id) : [...prev, id]
+      prev.includes(id) ? prev.filter((o) => o !== id) : [...prev, id],
     );
   }
 
@@ -42,57 +53,93 @@ export default function NewPromoForm({ offerings }: { offerings: Offering[] }) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="mt-6 space-y-5 bg-white border border-zinc-200 rounded p-5">
-      <div>
-        <label className="block text-sm font-medium text-zinc-700">Code</label>
-        <input
-          required
-          value={code}
-          onChange={(e) => setCode(e.target.value)}
-          className="mt-1 w-full px-3 py-2 border border-zinc-300 rounded font-mono uppercase"
-          placeholder="SUMMER25"
-        />
-      </div>
+    <Card className="p-7">
+      <form onSubmit={onSubmit} className="space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr_180px] gap-5">
+          <div className="space-y-2">
+            <Label htmlFor="code">Code</Label>
+            <Input
+              id="code"
+              required
+              value={code}
+              onChange={(e) => setCode(e.target.value.toUpperCase())}
+              className="font-mono uppercase"
+              placeholder="SUMMER25"
+            />
+          </div>
 
-      <div>
-        <label className="block text-sm font-medium text-zinc-700">Discount percent</label>
-        <input
-          required
-          type="number"
-          min={0}
-          max={100}
-          value={discountPercent}
-          onChange={(e) => setDiscountPercent(e.target.value)}
-          className="mt-1 w-32 px-3 py-2 border border-zinc-300 rounded"
-        />
-      </div>
-
-      <fieldset>
-        <legend className="block text-sm font-medium text-zinc-700">Applies to</legend>
-        <div className="mt-2 space-y-2">
-          {offerings.map((o) => (
-            <label key={o.id} className="flex items-center gap-2 text-sm">
-              <input
-                type="checkbox"
-                checked={appliesTo.includes(o.id)}
-                onChange={() => toggleOffering(o.id)}
+          <div className="space-y-2">
+            <Label htmlFor="discount">Discount</Label>
+            <div className="relative">
+              <Input
+                id="discount"
+                required
+                type="number"
+                min={0}
+                max={100}
+                value={discountPercent}
+                onChange={(e) => setDiscountPercent(e.target.value)}
               />
-              <span>{o.name}</span>
-              <span className="text-zinc-500">— {o.id}</span>
-            </label>
-          ))}
+              <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">
+                %
+              </span>
+            </div>
+          </div>
         </div>
-      </fieldset>
 
-      {error && <div className="text-sm text-red-600">{error}</div>}
+        <fieldset className="space-y-2">
+          <Label asChild>
+            <legend>Applies to</legend>
+          </Label>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {offerings.map((o) => {
+              const checked = appliesTo.includes(o.id);
+              return (
+                <label
+                  key={o.id}
+                  className={cn(
+                    "flex items-start gap-3 rounded-md border px-4 py-3 cursor-pointer transition-colors",
+                    checked
+                      ? "border-foreground/40 bg-secondary/50"
+                      : "border-border hover:bg-secondary/30",
+                  )}
+                >
+                  <Checkbox
+                    checked={checked}
+                    onCheckedChange={() => toggleOffering(o.id)}
+                    className="mt-0.5"
+                  />
+                  <div className="flex-1 leading-tight">
+                    <div className="text-sm font-medium">{o.name}</div>
+                    <div className="mt-0.5 text-[11px] text-muted-foreground">
+                      {money(o.price)}
+                    </div>
+                  </div>
+                </label>
+              );
+            })}
+          </div>
+        </fieldset>
 
-      <button
-        type="submit"
-        disabled={submitting}
-        className="px-4 py-2 rounded bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-700 disabled:opacity-50"
-      >
-        {submitting ? "Saving…" : "Save"}
-      </button>
-    </form>
+        {error && (
+          <div className="flex items-start gap-2 text-sm text-destructive">
+            <AlertCircle className="size-4 mt-0.5" />
+            <span>{error}</span>
+          </div>
+        )}
+
+        <div className="pt-1">
+          <Button type="submit" disabled={submitting}>
+            {submitting ? (
+              <>
+                <Loader2 className="animate-spin" /> Saving
+              </>
+            ) : (
+              "Save promo"
+            )}
+          </Button>
+        </div>
+      </form>
+    </Card>
   );
 }

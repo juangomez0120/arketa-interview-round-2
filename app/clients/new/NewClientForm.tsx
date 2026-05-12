@@ -2,6 +2,11 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { AlertCircle, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export default function NewClientForm() {
   const router = useRouter();
@@ -30,36 +35,50 @@ export default function NewClientForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="mt-6 space-y-5 bg-white border border-zinc-200 rounded p-5">
-      <div>
-        <label className="block text-sm font-medium text-zinc-700">Name</label>
-        <input
-          required
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="mt-1 w-full px-3 py-2 border border-zinc-300 rounded text-sm"
-        />
-      </div>
-      <div>
-        <label className="block text-sm font-medium text-zinc-700">Email</label>
-        <input
-          required
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="mt-1 w-full px-3 py-2 border border-zinc-300 rounded text-sm"
-        />
-      </div>
+    <Card className="p-7">
+      <form onSubmit={onSubmit} className="space-y-5">
+        <div className="space-y-2">
+          <Label htmlFor="name">Name</Label>
+          <Input
+            id="name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="e.g. Alex Rivera"
+          />
+        </div>
 
-      {error && <div className="text-sm text-red-600">{error}</div>}
+        <div className="space-y-2">
+          <Label htmlFor="email">Email</Label>
+          <Input
+            id="email"
+            required
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="alex@example.com"
+          />
+        </div>
 
-      <button
-        type="submit"
-        disabled={submitting}
-        className="px-4 py-2 rounded bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-700 disabled:opacity-50"
-      >
-        {submitting ? "Saving…" : "Save"}
-      </button>
-    </form>
+        {error && (
+          <div className="flex items-start gap-2 text-sm text-destructive">
+            <AlertCircle className="size-4 mt-0.5" />
+            <span>{error}</span>
+          </div>
+        )}
+
+        <div className="pt-1">
+          <Button type="submit" disabled={submitting}>
+            {submitting ? (
+              <>
+                <Loader2 className="animate-spin" /> Saving
+              </>
+            ) : (
+              "Save client"
+            )}
+          </Button>
+        </div>
+      </form>
+    </Card>
   );
 }

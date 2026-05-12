@@ -1,13 +1,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import type {
-  Charge,
-  ClassInstance,
-  Client,
-  Offering,
-  PromoCode,
-} from "./types";
+import type { Charge, Client, Offering, PromoCode } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 
@@ -51,20 +45,6 @@ export const db = {
     async findById(id: string): Promise<Offering | null> {
       const rows = await this.all();
       return rows.find((o) => o.id === id) ?? null;
-    },
-  },
-
-  classes: {
-    async all(): Promise<ClassInstance[]> {
-      return readJson<ClassInstance[]>("classes.json");
-    },
-    async findById(id: string): Promise<ClassInstance | null> {
-      const rows = await this.all();
-      return rows.find((c) => c.id === id) ?? null;
-    },
-    async byOfferingId(offeringId: string): Promise<ClassInstance[]> {
-      const rows = await this.all();
-      return rows.filter((c) => c.offeringId === offeringId);
     },
   },
 

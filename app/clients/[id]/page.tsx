@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
-import SendWelcomeButton from "./SendWelcomeButton";
 
 export default async function ClientProfilePage({
   params,
@@ -31,10 +30,6 @@ export default async function ClientProfilePage({
             <dd>{new Date(client.createdAt).toLocaleString()}</dd>
           </div>
         </dl>
-      </div>
-
-      <div className="mt-6">
-        <SendWelcomeButton clientId={client.id} />
       </div>
     </div>
   );

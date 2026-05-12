@@ -1,3 +1,5 @@
+import { RECIPIENT_PATTERN } from "./format";
+
 type SendArgs = { to: string };
 type SendResult = { status: number; messageId: string };
 
@@ -10,7 +12,7 @@ function prepareRecipient(rawAddress: string): string {
   const local = address.slice(0, atIndex);
   const domain = address.slice(atIndex + 1).toLowerCase();
   const recipient = `${local}@${domain}`;
-  if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(recipient)) {
+  if (!RECIPIENT_PATTERN.test(recipient)) {
     throw new Error("550 5.1.1 mailbox unavailable");
   }
   return recipient;

@@ -63,12 +63,12 @@ export default async function ChargesPage() {
                   <dt className="text-zinc-500">Subtotal</dt>
                   <dd>{money(charge.subtotal)}</dd>
                 </div>
-                <div className="flex justify-between">
-                  <dt className="text-zinc-500">
-                    Discount{charge.promoCode ? ` (${charge.promoCode})` : ""}
-                  </dt>
-                  <dd>-{money(charge.discount)}</dd>
-                </div>
+                {charge.promoCode && (
+                  <div className="flex justify-between">
+                    <dt className="text-zinc-500">Discount ({charge.promoCode})</dt>
+                    <dd>-{money(charge.discount)}</dd>
+                  </div>
+                )}
                 <div className="flex justify-between border-t border-zinc-200 pt-1 mt-1 font-medium">
                   <dt>Total</dt>
                   <dd>{money(charge.total)}</dd>

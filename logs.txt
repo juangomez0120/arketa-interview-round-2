@@ -1,0 +1,114 @@
+2026-05-10T14:00:13.244Z {"level":"INFO","msg":"App started"}
+2026-05-10T14:00:13.510Z {"level":"INFO","msg":"Loaded config","env":"development"}
+2026-05-10T14:21:14.244Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-10T14:21:14.405Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-10T14:42:08.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-10T14:42:08.339Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-10T15:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-10T15:02:55.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_002","email":"mike@example.com"}
+2026-05-10T15:02:55.477Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-10T15:11:30.001Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_003","email":"priya@example.com"}
+2026-05-10T15:11:30.089Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-10T15:14:50.778Z {"level":"WARN","msg":"Slow query","route":"/api/clients","duration_ms":812}
+2026-05-10T15:34:48.778Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-10T15:34:48.938Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-10T15:48:02.553Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_005","email":"diane@example.com"}
+2026-05-10T15:48:02.807Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-10T16:00:00.221Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":332}
+2026-05-10T16:11:55.219Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_004","email":"josé@yoga.mx"}
+2026-05-10T16:11:55.280Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}
+2026-05-10T16:12:50.221Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","email":"mike@example.com"}
+2026-05-10T16:12:50.364Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-10T16:48:33.412Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_003","email":"priya@example.com"}
+2026-05-10T16:48:33.690Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-10T17:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-10T17:03:55.001Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_008","email":"alex@example.com"}
+2026-05-10T17:03:55.118Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
+2026-05-10T17:21:33.504Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":712}
+2026-05-10T17:30:12.504Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_005","email":"diane@example.com"}
+2026-05-10T17:30:12.569Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-10T18:00:00.105Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":374}
+2026-05-10T18:01:18.119Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_002","email":"mike@example.com"}
+2026-05-10T18:01:18.175Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-10T18:45:02.553Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","email":"alex@example.com"}
+2026-05-10T18:45:02.603Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
+2026-05-10T19:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-10T19:11:09.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","email":"priya@example.com"}
+2026-05-10T19:11:09.134Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-10T19:48:50.221Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-10T19:48:50.413Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-10T20:00:00.105Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":443}
+2026-05-10T20:08:12.502Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_004","email":"josé@yoga.mx"}
+2026-05-10T20:08:12.625Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}
+2026-05-10T20:22:33.412Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","email":"diane@example.com"}
+2026-05-10T20:22:33.580Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-10T21:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-10T21:05:55.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_008","email":"alex@example.com"}
+2026-05-10T21:05:55.216Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
+2026-05-10T22:00:00.205Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":351}
+2026-05-10T22:36:19.044Z {"level":"ERROR","msg":"Charge persistence failed","chargeId":"chg_a4c8e0e1"}
+2026-05-10T23:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T00:00:00.314Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":427}
+2026-05-11T01:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T02:00:00.402Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":426}
+2026-05-11T03:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T04:00:00.508Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":306}
+2026-05-11T05:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T06:00:00.114Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":333}
+2026-05-11T06:11:09.221Z {"level":"WARN","msg":"Deprecation notice","api":"legacyClientImport"}
+2026-05-11T07:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T07:14:18.119Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-11T07:14:18.303Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-11T07:38:02.553Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_002","email":"mike@example.com"}
+2026-05-11T07:38:02.788Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-11T07:55:02.611Z {"level":"WARN","msg":"Retry succeeded","chargeId":"chg_a4c8e0e1","attempts":2}
+2026-05-11T08:00:00.412Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":307}
+2026-05-11T08:01:09.001Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_003","email":"priya@example.com"}
+2026-05-11T08:01:09.169Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-11T08:12:08.119Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_006","email":"maría.garcía@studio.com"}
+2026-05-11T08:12:08.263Z {"level":"ERROR","msg":"Email send failed","clientId":"c_006"}
+2026-05-11T08:22:50.221Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_005","email":"diane@example.com"}
+2026-05-11T08:22:50.350Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-11T08:48:33.412Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","email":"alex@example.com"}
+2026-05-11T08:48:33.688Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
+2026-05-11T08:48:50.778Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_007","email":"müller@strength.de"}
+2026-05-11T08:48:50.849Z {"level":"ERROR","msg":"Email send failed","clientId":"c_007"}
+2026-05-11T09:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T09:05:55.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-11T09:05:55.135Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-11T09:18:33.412Z {"level":"WARN","msg":"Deprecation notice","api":"legacyChargesEndpoint"}
+2026-05-11T09:34:18.119Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_002","email":"mike@example.com"}
+2026-05-11T09:34:18.263Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-11T09:51:02.553Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_003","email":"priya@example.com"}
+2026-05-11T09:51:02.624Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-11T09:52:09.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_009","email":"李伟@example.cn"}
+2026-05-11T09:52:09.543Z {"level":"ERROR","msg":"Email send failed","clientId":"c_009"}
+2026-05-11T10:00:00.190Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":413}
+2026-05-11T10:11:09.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_005","email":"diane@example.com"}
+2026-05-11T10:11:09.277Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-11T10:31:18.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","email":"maría.garcía@studio.com"}
+2026-05-11T10:31:18.105Z {"level":"ERROR","msg":"Email send failed","clientId":"c_006"}
+2026-05-11T10:33:50.221Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_008","email":"alex@example.com"}
+2026-05-11T10:33:50.363Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
+2026-05-11T10:42:11.001Z {"level":"WARN","msg":"Slow query","route":"/api/offerings","duration_ms":654}
+2026-05-11T11:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T11:02:33.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-11T11:02:33.512Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-11T11:15:55.221Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_007","email":"müller@strength.de"}
+2026-05-11T11:15:55.312Z {"level":"ERROR","msg":"Email send failed","clientId":"c_007"}
+2026-05-11T11:24:55.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","email":"mike@example.com"}
+2026-05-11T11:24:55.169Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-11T11:48:18.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","email":"priya@example.com"}
+2026-05-11T11:48:18.358Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-11T12:00:00.290Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":219}
+2026-05-11T12:15:02.553Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","email":"diane@example.com"}
+2026-05-11T12:15:02.721Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-11T12:33:08.504Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_009","email":"李伟@example.cn"}
+2026-05-11T12:33:08.588Z {"level":"ERROR","msg":"Email send failed","clientId":"c_009"}
+2026-05-11T12:42:09.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_008","email":"alex@example.com"}
+2026-05-11T12:42:09.119Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
+2026-05-11T13:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
+2026-05-11T13:05:50.221Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","email":"sarah@example.com"}
+2026-05-11T13:05:50.500Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-11T13:18:50.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","email":"josé@yoga.mx"}
+2026-05-11T13:18:50.188Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}

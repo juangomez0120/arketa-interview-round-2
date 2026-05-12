@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "id": "chg_a4c8e0e144",
+    "clientId": "c_002",
+    "items": [
+      {
+        "productId": "b9f0c2a1-d7e8-4c52-9a4f-2e8d5f1b3c91",
+        "type": "classPack",
+        "price": 20000
+      }
+    ],
+    "subtotal": 20000,
+    "discount": 0,
+    "total": 20000,
+    "promoCode": "SUMMER25",
+    "createdAt": "2026-05-09T17:42:11.000Z"
+  },
+  {
+    "id": "chg_31fcb0e8a2",
+    "clientId": "c_001",
+    "items": [
+      {
+        "productId": "3c8a6b14-12f9-4e1d-91a2-7b0e4d8a8f17",
+        "type": "class",
+        "price": 5000
+      }
+    ],
+    "subtotal": 5000,
+    "discount": 0,
+    "total": 5000,
+    "promoCode": null,
+    "createdAt": "2026-05-09T19:14:55.000Z"
+  },
+  {
+    "id": "chg_8d220fa177",
+    "clientId": "c_003",
+    "items": [
+      {
+        "productId": "7e1b9a04-5f2c-4321-bcad-92e4f6b18d5d",
+        "type": "classPack",
+        "price": 20000
+      },
+      {
+        "productId": "1a2d4f80-83b6-49f3-8c7e-fa5b1d22c401",
+        "type": "class",
+        "price": 0,
+        "parentProductId": "7e1b9a04-5f2c-4321-bcad-92e4f6b18d5d"
+      }
+    ],
+    "subtotal": 20000,
+    "discount": 0,
+    "total": 20000,
+    "promoCode": "SUMMER25",
+    "createdAt": "2026-05-10T11:08:31.000Z"
+  }
+]

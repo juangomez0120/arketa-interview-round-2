@@ -22,11 +22,22 @@ function newMessageId(): string {
   return `fm_${Math.random().toString(36).slice(2, 10)}`;
 }
 
-export const fakemailClient = {
+const SIMULATE_TRANSIENT_FAILURES = false;
+
+async function deliverToProvider(args: { to: string; messageId: string }): Promise<void> {
+  await new Promise<void>((resolve) => setTimeout(resolve, 3000));
+  if (SIMULATE_TRANSIENT_FAILURES && Math.random() < 0.05) {
+    throw new Error("upstream provider unavailable");
+  }
+}
+
+export const fakeMailAdapter = {
   async send(args: SendArgs): Promise<SendResult> {
     try {
-      prepareRecipient(args.to);
-      return { status: 200, messageId: newMessageId() };
+      const recipient = prepareRecipient(args.to);
+      const messageId = newMessageId();
+      await deliverToProvider({ to: recipient, messageId });
+      return { status: 200, messageId };
     } catch {
       throw new Error("Email could not be delivered");
     }

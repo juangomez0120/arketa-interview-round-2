@@ -1,0 +1,6 @@
+[
+  { "id": "cls-001", "name": "8am Bootcamp Mon", "offeringId": "of-pack-002", "startsAt": "2026-05-12T08:00:00.000Z" },
+  { "id": "cls-002", "name": "6pm Vinyasa Tue", "offeringId": "of-pack-002", "startsAt": "2026-05-13T18:00:00.000Z" },
+  { "id": "cls-003", "name": "Saturday Mobility Workshop", "offeringId": "of-class-001", "startsAt": "2026-05-17T10:00:00.000Z" },
+  { "id": "cls-004", "name": "9am HIIT Wed", "offeringId": "of-pack-002", "startsAt": "2026-05-14T09:00:00.000Z" }
+]

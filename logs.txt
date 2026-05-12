@@ -65,14 +65,14 @@
 2026-05-11T08:00:00.412Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":307}
 2026-05-11T08:01:09.001Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_003","email":"priya@example.com"}
 2026-05-11T08:01:09.169Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-11T08:12:08.119Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_006","email":"maría.garcía@studio.com"}
-2026-05-11T08:12:08.263Z {"level":"ERROR","msg":"Email send failed","clientId":"c_006"}
+2026-05-11T08:12:08.119Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_006","email":"olivia@example.com"}
+2026-05-11T08:12:08.263Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
 2026-05-11T08:22:50.221Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_005","email":"diane@example.com"}
 2026-05-11T08:22:50.350Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
 2026-05-11T08:48:33.412Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","email":"alex@example.com"}
 2026-05-11T08:48:33.688Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
-2026-05-11T08:48:50.778Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_007","email":"müller@strength.de"}
-2026-05-11T08:48:50.849Z {"level":"ERROR","msg":"Email send failed","clientId":"c_007"}
+2026-05-11T08:48:50.778Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_007","email":"daniel@example.com"}
+2026-05-11T08:48:50.849Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
 2026-05-11T09:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
 2026-05-11T09:05:55.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","email":"sarah@example.com"}
 2026-05-11T09:05:55.135Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
@@ -81,21 +81,21 @@
 2026-05-11T09:34:18.263Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
 2026-05-11T09:51:02.553Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_003","email":"priya@example.com"}
 2026-05-11T09:51:02.624Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-11T09:52:09.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_009","email":"李伟@example.cn"}
-2026-05-11T09:52:09.543Z {"level":"ERROR","msg":"Email send failed","clientId":"c_009"}
+2026-05-11T09:52:09.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_009","email":"ethan@example.com"}
+2026-05-11T09:52:09.543Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
 2026-05-11T10:00:00.190Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":413}
 2026-05-11T10:11:09.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_005","email":"diane@example.com"}
 2026-05-11T10:11:09.277Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-11T10:31:18.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","email":"maría.garcía@studio.com"}
-2026-05-11T10:31:18.105Z {"level":"ERROR","msg":"Email send failed","clientId":"c_006"}
+2026-05-11T10:31:18.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","email":"olivia@example.com"}
+2026-05-11T10:31:18.105Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
 2026-05-11T10:33:50.221Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_008","email":"alex@example.com"}
 2026-05-11T10:33:50.363Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
 2026-05-11T10:42:11.001Z {"level":"WARN","msg":"Slow query","route":"/api/offerings","duration_ms":654}
 2026-05-11T11:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
 2026-05-11T11:02:33.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_001","email":"sarah@example.com"}
 2026-05-11T11:02:33.512Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-11T11:15:55.221Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_007","email":"müller@strength.de"}
-2026-05-11T11:15:55.312Z {"level":"ERROR","msg":"Email send failed","clientId":"c_007"}
+2026-05-11T11:15:55.221Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_007","email":"daniel@example.com"}
+2026-05-11T11:15:55.312Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
 2026-05-11T11:24:55.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","email":"mike@example.com"}
 2026-05-11T11:24:55.169Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
 2026-05-11T11:48:18.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","email":"priya@example.com"}
@@ -103,8 +103,8 @@
 2026-05-11T12:00:00.290Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":219}
 2026-05-11T12:15:02.553Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","email":"diane@example.com"}
 2026-05-11T12:15:02.721Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-11T12:33:08.504Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_009","email":"李伟@example.cn"}
-2026-05-11T12:33:08.588Z {"level":"ERROR","msg":"Email send failed","clientId":"c_009"}
+2026-05-11T12:33:08.504Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_009","email":"ethan@example.com"}
+2026-05-11T12:33:08.588Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
 2026-05-11T12:42:09.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_008","email":"alex@example.com"}
 2026-05-11T12:42:09.119Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
 2026-05-11T13:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}

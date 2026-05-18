@@ -66,9 +66,6 @@ export default async function ChargesPage() {
                     >
                       <span>
                         {typeLabel(item.type)}
-                        {item.parentProductId && (
-                          <span className="text-muted-foreground"> (covered by pack)</span>
-                        )}
                       </span>
                       <span className="font-mono text-xs">{money(item.price)}</span>
                     </li>

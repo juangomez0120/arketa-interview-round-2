@@ -16,7 +16,6 @@ export async function POST(req: Request) {
       productId: randomUUID(),
       type: p.type,
       price: p.price,
-      parentProductId: p.parentProductId,
     })),
   };
 

@@ -43,8 +43,7 @@
       {
         "productId": "1a2d4f80-83b6-49f3-8c7e-fa5b1d22c401",
         "type": "class",
-        "price": 0,
-        "parentProductId": "7e1b9a04-5f2c-4321-bcad-92e4f6b18d5d"
+        "price": 0
       }
     ],
     "subtotal": 20000,

@@ -24,7 +24,6 @@ export type CartProduct = {
   productId: string;
   type: OfferingType;
   price: number;
-  parentProductId?: string;
 };
 
 export type Cart = {

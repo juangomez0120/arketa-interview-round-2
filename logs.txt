@@ -112,5 +112,3 @@
 2026-05-11T13:05:50.500Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
 2026-05-11T13:18:50.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","email":"josé@yoga.mx"}
 2026-05-11T13:18:50.188Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}
-2026-05-12T16:37:11.664Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_b9a3e6d8","email":"àààà@domain.com"}
-2026-05-12T16:37:11.665Z {"level":"ERROR","msg":"Email send failed","clientId":"c_b9a3e6d8"}

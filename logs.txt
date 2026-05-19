@@ -1,114 +1,1000 @@
-2026-05-10T14:00:13.244Z {"level":"INFO","msg":"App started"}
-2026-05-10T14:00:13.510Z {"level":"INFO","msg":"Loaded config","env":"development"}
-2026-05-10T14:21:14.244Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-10T14:21:14.405Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-10T14:42:08.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-10T14:42:08.339Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-10T15:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-10T15:02:55.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_002","email":"mike@example.com"}
-2026-05-10T15:02:55.477Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
-2026-05-10T15:11:30.001Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_003","email":"priya@example.com"}
-2026-05-10T15:11:30.089Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-10T15:14:50.778Z {"level":"WARN","msg":"Slow query","route":"/api/clients","duration_ms":812}
-2026-05-10T15:34:48.778Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-10T15:34:48.938Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-10T15:48:02.553Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_005","email":"diane@example.com"}
-2026-05-10T15:48:02.807Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-10T16:00:00.221Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":332}
-2026-05-10T16:11:55.219Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_004","email":"josé@yoga.mx"}
-2026-05-10T16:11:55.280Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}
-2026-05-10T16:12:50.221Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","email":"mike@example.com"}
-2026-05-10T16:12:50.364Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
-2026-05-10T16:48:33.412Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_003","email":"priya@example.com"}
-2026-05-10T16:48:33.690Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-10T17:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-10T17:03:55.001Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_008","email":"alex@example.com"}
-2026-05-10T17:03:55.118Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
-2026-05-10T17:21:33.504Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":712}
-2026-05-10T17:30:12.504Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_005","email":"diane@example.com"}
-2026-05-10T17:30:12.569Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-10T18:00:00.105Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":374}
-2026-05-10T18:01:18.119Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_002","email":"mike@example.com"}
-2026-05-10T18:01:18.175Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
-2026-05-10T18:45:02.553Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","email":"alex@example.com"}
-2026-05-10T18:45:02.603Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
-2026-05-10T19:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-10T19:11:09.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","email":"priya@example.com"}
-2026-05-10T19:11:09.134Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-10T19:48:50.221Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-10T19:48:50.413Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-10T20:00:00.105Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":443}
-2026-05-10T20:08:12.502Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_004","email":"josé@yoga.mx"}
-2026-05-10T20:08:12.625Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}
-2026-05-10T20:22:33.412Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","email":"diane@example.com"}
-2026-05-10T20:22:33.580Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-10T21:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-10T21:05:55.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_008","email":"alex@example.com"}
-2026-05-10T21:05:55.216Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
-2026-05-10T22:00:00.205Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":351}
-2026-05-10T22:36:19.044Z {"level":"ERROR","msg":"Charge persistence failed","chargeId":"chg_a4c8e0e1"}
-2026-05-10T23:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T00:00:00.314Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":427}
-2026-05-11T01:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T02:00:00.402Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":426}
-2026-05-11T03:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T04:00:00.508Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":306}
-2026-05-11T05:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T06:00:00.114Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":333}
-2026-05-11T06:11:09.221Z {"level":"WARN","msg":"Deprecation notice","api":"legacyClientImport"}
-2026-05-11T07:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T07:14:18.119Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-11T07:14:18.303Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-11T07:38:02.553Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_002","email":"mike@example.com"}
-2026-05-11T07:38:02.788Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
-2026-05-11T07:55:02.611Z {"level":"WARN","msg":"Retry succeeded","chargeId":"chg_a4c8e0e1","attempts":2}
-2026-05-11T08:00:00.412Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":307}
-2026-05-11T08:01:09.001Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_003","email":"priya@example.com"}
-2026-05-11T08:01:09.169Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-11T08:12:08.119Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_006","email":"olivia@example.com"}
-2026-05-11T08:12:08.263Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
-2026-05-11T08:22:50.221Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_005","email":"diane@example.com"}
-2026-05-11T08:22:50.350Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-11T08:48:33.412Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","email":"alex@example.com"}
-2026-05-11T08:48:33.688Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
-2026-05-11T08:48:50.778Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_007","email":"daniel@example.com"}
-2026-05-11T08:48:50.849Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
-2026-05-11T09:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T09:05:55.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-11T09:05:55.135Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-11T09:18:33.412Z {"level":"WARN","msg":"Deprecation notice","api":"legacyChargesEndpoint"}
-2026-05-11T09:34:18.119Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_002","email":"mike@example.com"}
-2026-05-11T09:34:18.263Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
-2026-05-11T09:51:02.553Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_003","email":"priya@example.com"}
-2026-05-11T09:51:02.624Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-11T09:52:09.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_009","email":"ethan@example.com"}
-2026-05-11T09:52:09.543Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
-2026-05-11T10:00:00.190Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":413}
-2026-05-11T10:11:09.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_005","email":"diane@example.com"}
-2026-05-11T10:11:09.277Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-11T10:31:18.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","email":"olivia@example.com"}
-2026-05-11T10:31:18.105Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
-2026-05-11T10:33:50.221Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_008","email":"alex@example.com"}
-2026-05-11T10:33:50.363Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
-2026-05-11T10:42:11.001Z {"level":"WARN","msg":"Slow query","route":"/api/offerings","duration_ms":654}
-2026-05-11T11:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T11:02:33.412Z {"level":"INFO","msg":"Sending welcome email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-11T11:02:33.512Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-11T11:15:55.221Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_007","email":"daniel@example.com"}
-2026-05-11T11:15:55.312Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
-2026-05-11T11:24:55.001Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","email":"mike@example.com"}
-2026-05-11T11:24:55.169Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
-2026-05-11T11:48:18.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","email":"priya@example.com"}
-2026-05-11T11:48:18.358Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
-2026-05-11T12:00:00.290Z {"level":"INFO","msg":"Daily digest job ran","duration_ms":219}
-2026-05-11T12:15:02.553Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","email":"diane@example.com"}
-2026-05-11T12:15:02.721Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
-2026-05-11T12:33:08.504Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_009","email":"ethan@example.com"}
-2026-05-11T12:33:08.588Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
-2026-05-11T12:42:09.001Z {"level":"INFO","msg":"Sending reminder email","clientId":"c_008","email":"alex@example.com"}
-2026-05-11T12:42:09.119Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"alex@example.com"}
-2026-05-11T13:00:14.000Z {"level":"INFO","msg":"Heartbeat","uptime_s":3600}
-2026-05-11T13:05:50.221Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","email":"sarah@example.com"}
-2026-05-11T13:05:50.500Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
-2026-05-11T13:18:50.119Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","email":"josé@yoga.mx"}
-2026-05-11T13:18:50.188Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}
+2026-05-05T20:01:34.227Z {"level":"INFO","msg":"Cache hit","key":"charges:recent"}
+2026-05-05T20:15:39.638Z {"level":"WARN","msg":"Slow query","route":"/api/clients","duration_ms":1847}
+2026-05-05T20:30:33.484Z {"level":"INFO","msg":"Cache hit","key":"offerings:list"}
+2026-05-05T20:38:58.499Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/promos","error":"SyntaxError: Unexpected token < in JSON at position 0"}
+2026-05-05T21:44:18.219Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-05T21:44:29.582Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":11363}
+2026-05-05T22:04:25.199Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-05T22:04:49.407Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":24208}
+2026-05-05T23:55:27.120Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"POST","status":404,"duration_ms":365}
+2026-05-06T01:15:58.325Z {"level":"WARN","msg":"Retrying after backoff","attempt":3,"target":"db-1"}
+2026-05-06T02:14:07.837Z {"level":"ERROR","msg":"Failed to read data file","file":"charges.json"}
+2026-05-06T02:46:32.011Z {"level":"INFO","msg":"Request handled","route":"/api/clients","method":"GET","status":200,"duration_ms":287}
+2026-05-06T02:50:03.294Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"POST","status":200,"duration_ms":1293}
+2026-05-06T04:01:36.420Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"GET","status":200,"duration_ms":539}
+2026-05-06T04:35:10.553Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"POST","status":200,"duration_ms":877}
+2026-05-06T04:46:06.300Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-06T04:46:49.051Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":42751}
+2026-05-06T05:39:29.555Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-06T05:39:54.445Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":24890}
+2026-05-06T06:59:04.449Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"POST","status":404,"duration_ms":769}
+2026-05-06T07:22:12.633Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"POST","status":200,"duration_ms":280}
+2026-05-06T08:21:55.456Z {"level":"ERROR","msg":"Worker crashed","worker":"session_gc","pid":33038}
+2026-05-06T09:12:29.489Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"GET","status":302,"duration_ms":2094}
+2026-05-06T10:05:05.720Z {"level":"WARN","msg":"Slow query","route":"/api/checkout/quote","duration_ms":1823}
+2026-05-06T10:12:53.524Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"GET","status":200,"duration_ms":1756}
+2026-05-06T11:17:16.623Z {"level":"INFO","msg":"Job started","job":"metrics_rollup"}
+2026-05-06T11:17:29.371Z {"level":"INFO","msg":"Job completed","job":"metrics_rollup","duration_ms":12748}
+2026-05-06T11:54:06.579Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/quote","method":"POST","status":200,"duration_ms":304}
+2026-05-06T13:32:56.831Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-06T13:33:29.916Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":33085}
+2026-05-06T16:12:16.815Z {"level":"INFO","msg":"Cache hit","key":"clients:by_partner"}
+2026-05-06T18:40:51.048Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"GET","status":200,"duration_ms":596}
+2026-05-06T19:17:51.561Z {"level":"WARN","msg":"Slow query","route":"/charges","duration_ms":1232}
+2026-05-06T20:03:05.816Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"POST","status":200,"duration_ms":1042}
+2026-05-06T20:06:54.595Z {"level":"INFO","msg":"Cache hit","key":"charges:recent"}
+2026-05-06T21:36:01.722Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-07T01:35:10.953Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"GET","status":404,"duration_ms":769}
+2026-05-07T01:35:42.187Z {"level":"WARN","msg":"Slow query","route":"/clients","duration_ms":1984}
+2026-05-07T04:08:00.874Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-07T04:08:36.206Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":35332}
+2026-05-07T04:40:23.348Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"POST","status":302,"duration_ms":1138}
+2026-05-07T04:40:44.119Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"GET","status":200,"duration_ms":141}
+2026-05-07T05:06:28.586Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"GET","status":200,"duration_ms":651}
+2026-05-07T06:02:16.868Z {"level":"ERROR","msg":"Worker crashed","worker":"stale_cart_cleanup","pid":44421}
+2026-05-07T07:07:51.992Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-07T07:08:21.704Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":29712}
+2026-05-07T07:52:55.088Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-07T09:42:07.578Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"GET","status":302,"duration_ms":670}
+2026-05-07T10:07:51.122Z {"level":"INFO","msg":"Cache miss","key":"promos:list"}
+2026-05-07T10:14:35.129Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-07T13:45:18.852Z {"level":"INFO","msg":"Cache hit","key":"charges:recent"}
+2026-05-07T14:11:57.009Z {"level":"ERROR","msg":"Database connection lost","host":"db-1","attempt":3}
+2026-05-07T16:54:12.733Z {"level":"WARN","msg":"Slow query","route":"/promos","duration_ms":1518}
+2026-05-07T16:59:40.025Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":200,"duration_ms":328}
+2026-05-07T19:55:04.884Z {"level":"INFO","msg":"Request handled","route":"/api/clients","method":"POST","status":404,"duration_ms":322}
+2026-05-07T20:17:53.226Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-07T21:25:39.091Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-08T00:06:17.639Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"POST","status":404,"duration_ms":313}
+2026-05-08T00:25:22.505Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":1091}
+2026-05-08T00:40:32.006Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-08T00:40:38.904Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":6898}
+2026-05-08T02:19:35.056Z {"level":"WARN","msg":"Slow query","route":"/api/clients","duration_ms":1373}
+2026-05-08T02:40:34.792Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"GET","status":200,"duration_ms":748}
+2026-05-08T03:32:37.378Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-08T03:32:57.808Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":20430}
+2026-05-08T04:25:58.097Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"POST","status":200,"duration_ms":380}
+2026-05-08T06:50:23.825Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-08T06:51:00.109Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":36284}
+2026-05-08T06:52:59.725Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/quote","method":"POST","status":302,"duration_ms":1754}
+2026-05-08T08:30:36.335Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"GET","status":302,"duration_ms":1395}
+2026-05-08T08:41:55.493Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/quote","method":"POST","status":404,"duration_ms":683}
+2026-05-08T11:05:40.324Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"GET","status":200,"duration_ms":227}
+2026-05-08T14:09:33.427Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"GET","status":200,"duration_ms":628}
+2026-05-08T14:21:57.598Z {"level":"INFO","msg":"Cache hit","key":"charges:recent"}
+2026-05-08T15:02:26.969Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-08T15:02:36.096Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":9127}
+2026-05-08T16:28:33.096Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-08T16:29:02.610Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":29514}
+2026-05-08T19:04:28.297Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"POST","status":200,"duration_ms":1658}
+2026-05-08T19:13:47.160Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"GET","status":200,"duration_ms":228}
+2026-05-08T20:24:57.979Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"GET","status":200,"duration_ms":600}
+2026-05-08T20:42:09.529Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"GET","status":204,"duration_ms":115}
+2026-05-08T21:57:31.774Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"POST","status":200,"duration_ms":1268}
+2026-05-09T03:42:47.153Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"POST","status":200,"duration_ms":343}
+2026-05-09T06:27:31.896Z {"level":"ERROR","msg":"Worker crashed","worker":"session_gc","pid":54058}
+2026-05-09T06:59:13.417Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-09T06:59:36.596Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":23179}
+2026-05-09T08:08:25.344Z {"level":"INFO","msg":"Cache miss","key":"offerings:list"}
+2026-05-09T08:14:07.774Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"GET","status":404,"duration_ms":110}
+2026-05-09T10:27:41.011Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"GET","status":200,"duration_ms":525}
+2026-05-09T13:50:51.598Z {"level":"INFO","msg":"Cache hit","key":"charges:recent"}
+2026-05-09T17:26:55.063Z {"level":"INFO","msg":"Job started","job":"metrics_rollup"}
+2026-05-09T17:27:30.988Z {"level":"INFO","msg":"Job completed","job":"metrics_rollup","duration_ms":35925}
+2026-05-09T17:47:33.245Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"GET","status":404,"duration_ms":327}
+2026-05-09T17:56:45.757Z {"level":"ERROR","msg":"Charge rejected","reason":"card_declined","chargeId":"chg_ed47870f2a"}
+2026-05-09T18:17:47.940Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"GET","status":204,"duration_ms":673}
+2026-05-09T18:45:22.362Z {"level":"INFO","msg":"Cache miss","key":"clients:by_partner"}
+2026-05-09T19:34:26.146Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/charges","error":"SyntaxError: Unexpected token < in JSON at position 0"}
+2026-05-09T23:31:49.493Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-10T00:48:29.416Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"POST","status":200,"duration_ms":1585}
+2026-05-10T01:10:00.604Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"GET","status":200,"duration_ms":1603}
+2026-05-10T01:32:36.929Z {"level":"INFO","msg":"Cache miss","key":"charges:recent"}
+2026-05-10T02:38:10.140Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"GET","status":200,"duration_ms":1264}
+2026-05-10T05:04:51.032Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/checkout","error":"RangeError: Maximum call stack size exceeded"}
+2026-05-10T07:01:49.339Z {"level":"INFO","msg":"Job started","job":"metrics_rollup"}
+2026-05-10T07:02:21.378Z {"level":"INFO","msg":"Job completed","job":"metrics_rollup","duration_ms":32039}
+2026-05-10T08:53:39.429Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"GET","status":200,"duration_ms":310}
+2026-05-10T09:11:04.627Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"POST","status":200,"duration_ms":261}
+2026-05-10T10:27:27.802Z {"level":"WARN","msg":"Config drift detected","key":"feature.cohorts"}
+2026-05-10T11:16:38.506Z {"level":"INFO","msg":"Cache hit","key":"clients:by_partner"}
+2026-05-10T11:52:02.548Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"POST","status":200,"duration_ms":144}
+2026-05-10T12:03:12.665Z {"level":"WARN","msg":"Slow query","route":"/api/checkout/quote","duration_ms":1849}
+2026-05-10T12:54:30.533Z {"level":"WARN","msg":"Slow query","route":"/api/checkout/quote","duration_ms":2119}
+2026-05-10T13:38:57.369Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"GET","status":200,"duration_ms":487}
+2026-05-10T15:53:36.370Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-10T15:53:36.767Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-10T16:50:58.759Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-10T16:50:58.985Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-10T17:09:37.261Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":1408}
+2026-05-10T17:18:02.349Z {"level":"WARN","msg":"Slow query","route":"/clients","duration_ms":1163}
+2026-05-10T17:34:04.660Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/api/checkout/submit","error":"TypeError: Cannot read properties of undefined"}
+2026-05-10T17:34:47.432Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-10T17:34:48.009Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-10T18:06:24.831Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-10T18:06:25.115Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-10T18:36:34.846Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-10T18:36:35.582Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-10T20:26:41.788Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-10T20:26:41.897Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-10T23:17:37.271Z {"level":"WARN","msg":"Slow query","route":"/offerings","duration_ms":932}
+2026-05-10T23:55:42.188Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-10T23:55:43.009Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-11T00:01:11.124Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-11T00:01:12.033Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-11T01:32:40.933Z {"level":"WARN","msg":"Slow query","route":"/api/auth/switch","duration_ms":1353}
+2026-05-11T02:07:41.551Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-11T02:07:41.694Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-11T04:22:33.953Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-11T04:22:34.525Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-11T04:32:10.735Z {"level":"INFO","msg":"Job started","job":"metrics_rollup"}
+2026-05-11T04:32:16.480Z {"level":"INFO","msg":"Job completed","job":"metrics_rollup","duration_ms":5745}
+2026-05-11T04:49:20.178Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"GET","status":204,"duration_ms":46}
+2026-05-11T04:59:28.599Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"POST","status":200,"duration_ms":348}
+2026-05-11T05:33:37.774Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-11T05:33:38.381Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-11T06:29:46.878Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-11T06:29:47.326Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-11T06:34:19.204Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-11T06:34:20.023Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-11T08:21:13.601Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-11T08:21:14.379Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-11T08:47:36.653Z {"level":"WARN","msg":"Slow query","route":"/api/auth/switch","duration_ms":2031}
+2026-05-11T09:05:03.350Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-11T09:05:03.640Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-11T09:06:34.242Z {"level":"WARN","msg":"Deprecated route","route":"/api/v1/promos"}
+2026-05-11T09:52:40.429Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"GET","status":200,"duration_ms":367}
+2026-05-11T11:01:40.487Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-11T11:01:41.385Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-11T11:42:47.671Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-11T11:42:47.946Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-11T11:55:27.146Z {"level":"WARN","msg":"Quota nearing limit","resource":"outbound_emails_per_hour","used":835,"limit":1000}
+2026-05-11T11:57:03.088Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-11T11:57:03.142Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-11T12:07:31.402Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-11T12:07:31.833Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-11T13:13:50.767Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-11T13:14:15.494Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":24727}
+2026-05-11T14:34:38.899Z {"level":"WARN","msg":"Quota nearing limit","resource":"outbound_emails_per_hour","used":844,"limit":1000}
+2026-05-11T15:41:49.421Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-11T15:41:50.075Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-11T15:50:04.510Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-11T15:50:08.631Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":4121}
+2026-05-11T15:57:08.830Z {"level":"WARN","msg":"Slow query","route":"/promos","duration_ms":1940}
+2026-05-11T16:30:10.083Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-11T16:30:10.348Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-11T16:31:18.357Z {"level":"INFO","msg":"Cache miss","key":"offerings:list"}
+2026-05-11T16:56:19.539Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-11T16:56:20.351Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-11T17:07:53.987Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-11T17:07:54.613Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-11T17:09:18.366Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-11T17:09:18.920Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-11T18:27:28.009Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-11T18:36:36.616Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-11T18:36:36.784Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-11T18:36:51.530Z {"level":"INFO","msg":"Cache hit","key":"clients:by_partner"}
+2026-05-11T18:37:13.441Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-11T18:37:13.520Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-11T19:18:17.649Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-11T19:18:17.854Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-11T20:02:14.112Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/quote","method":"POST","status":200,"duration_ms":820}
+2026-05-11T21:04:25.526Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-11T21:04:25.718Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-11T21:37:48.982Z {"level":"ERROR","msg":"Worker crashed","worker":"metrics_rollup","pid":32885}
+2026-05-11T21:51:33.512Z {"level":"INFO","msg":"Request handled","route":"/api/clients","method":"POST","status":200,"duration_ms":1601}
+2026-05-11T22:25:32.473Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-11T22:25:32.951Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-11T22:32:30.481Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-11T22:32:31.396Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-11T22:39:09.583Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"GET","status":200,"duration_ms":813}
+2026-05-12T00:02:18.322Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-12T00:02:55.458Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":37136}
+2026-05-12T00:31:28.920Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-12T00:31:29.114Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-12T00:47:38.633Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T00:47:39.339Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T01:16:59.231Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-12T01:16:59.897Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-12T01:17:16.497Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"GET","status":200,"duration_ms":860}
+2026-05-12T02:18:31.698Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"POST","status":200,"duration_ms":147}
+2026-05-12T02:36:22.089Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T02:36:22.885Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T03:15:02.967Z {"level":"WARN","msg":"Retrying after backoff","attempt":2,"target":"db-1"}
+2026-05-12T03:18:09.032Z {"level":"WARN","msg":"Quota nearing limit","resource":"outbound_emails_per_hour","used":850,"limit":1000}
+2026-05-12T04:16:06.100Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-12T04:16:43.900Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":37800}
+2026-05-12T05:08:13.416Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T05:08:14.330Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-12T05:24:21.290Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-12T05:24:22.147Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-12T05:33:40.887Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T05:33:41.007Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T05:56:27.864Z {"level":"WARN","msg":"Slow query","route":"/checkout","duration_ms":1364}
+2026-05-12T06:03:31.164Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-12T06:03:31.410Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-12T06:06:07.133Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"POST","status":404,"duration_ms":273}
+2026-05-12T06:41:00.713Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T06:41:01.009Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T06:46:43.889Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-12T06:46:44.090Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-12T06:57:41.359Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T06:57:42.276Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-12T06:58:59.566Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-12T06:59:00.130Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-12T07:29:38.474Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T07:29:38.628Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-12T07:43:36.742Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-12T07:43:37.552Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-12T09:16:17.584Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-12T09:49:29.024Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-12T09:49:29.335Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-12T09:57:12.027Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-12T09:57:12.682Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-12T10:19:07.706Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-12T10:19:08.081Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-12T10:28:56.927Z {"level":"WARN","msg":"Retrying after backoff","attempt":3,"target":"fakemail"}
+2026-05-12T11:09:18.827Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-12T12:04:01.342Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"GET","status":302,"duration_ms":2001}
+2026-05-12T12:07:54.377Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-12T12:30:11.325Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-12T12:30:11.920Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-12T12:43:04.808Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-12T12:43:04.930Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-12T12:43:14.978Z {"level":"WARN","msg":"Slow query","route":"/charges","duration_ms":1111}
+2026-05-12T13:24:13.783Z {"level":"WARN","msg":"Quota nearing limit","resource":"outbound_emails_per_hour","used":901,"limit":1000}
+2026-05-12T14:01:35.310Z {"level":"WARN","msg":"Deprecated route","route":"/api/v1/promos"}
+2026-05-12T14:02:53.083Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T14:02:53.290Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-12T14:04:17.331Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":404,"duration_ms":1703}
+2026-05-12T14:15:42.588Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T14:15:43.128Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T14:42:32.673Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-12T14:42:33.510Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-12T14:57:12.988Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-12T14:57:13.249Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-12T14:59:23.290Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-12T14:59:43.305Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":20015}
+2026-05-12T15:34:50.599Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T15:34:51.040Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-12T15:41:12.851Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-12T15:41:13.553Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-12T16:24:25.233Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-12T16:24:26.001Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-12T16:42:35.744Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-12T16:42:35.973Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-12T16:42:47.912Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-12T16:43:13.474Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":25562}
+2026-05-12T17:49:10.929Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T17:49:11.459Z {"level":"ERROR","msg":"Email send failed","clientId":"c_004"}
+2026-05-12T18:03:36.750Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-12T18:03:37.122Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-12T18:38:52.704Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-12T18:38:53.325Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-12T18:49:56.936Z {"level":"INFO","msg":"Request handled","route":"/api/clients","method":"GET","status":200,"duration_ms":1774}
+2026-05-12T18:58:12.586Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-12T18:58:13.464Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-12T19:24:46.650Z {"level":"INFO","msg":"Job started","job":"metrics_rollup"}
+2026-05-12T19:25:27.580Z {"level":"INFO","msg":"Job completed","job":"metrics_rollup","duration_ms":40930}
+2026-05-12T19:31:03.260Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T19:31:03.973Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-12T19:43:36.199Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T19:43:36.533Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T20:20:26.472Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-12T20:20:27.079Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-12T20:30:29.737Z {"level":"WARN","msg":"Deprecated route","route":"/api/legacy/charges"}
+2026-05-12T20:43:07.016Z {"level":"INFO","msg":"Cache miss","key":"clients:by_partner"}
+2026-05-12T20:54:57.263Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-12T20:54:57.459Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-12T21:19:12.196Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-12T21:19:12.746Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-12T21:46:51.977Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T21:46:52.613Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T21:57:47.325Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T21:57:48.251Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-12T22:24:33.700Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-12T22:24:34.231Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-12T22:36:13.020Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-12T22:36:13.924Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-12T23:10:14.518Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-12T23:10:14.982Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-13T00:14:53.747Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-13T00:14:54.609Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-13T00:39:35.715Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-13T00:39:36.580Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-13T01:18:42.510Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-13T01:18:43.086Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-13T01:30:53.185Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-13T01:30:53.540Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-13T01:41:03.788Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T01:41:04.269Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T02:27:41.084Z {"level":"WARN","msg":"Slow query","route":"/offerings","duration_ms":1338}
+2026-05-13T03:13:12.171Z {"level":"INFO","msg":"Cache miss","key":"offerings:list"}
+2026-05-13T03:14:49.262Z {"level":"WARN","msg":"Config drift detected","key":"feature.cohorts"}
+2026-05-13T03:16:50.237Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/api/auth/switch","error":"RangeError: Maximum call stack size exceeded"}
+2026-05-13T03:20:50.438Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-13T03:20:50.858Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-13T03:55:53.972Z {"level":"INFO","msg":"Cache hit","key":"promos:list"}
+2026-05-13T04:47:58.518Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-13T04:47:59.090Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-13T05:25:58.917Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-13T05:25:59.309Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-13T05:35:18.377Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-13T05:35:18.616Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-13T05:44:02.475Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-13T05:44:03.000Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-13T05:53:33.505Z {"level":"WARN","msg":"Retrying after backoff","attempt":1,"target":"config-store"}
+2026-05-13T06:13:22.648Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/checkout","error":"SyntaxError: Unexpected token < in JSON at position 0"}
+2026-05-13T07:01:47.231Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T07:01:47.363Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T07:42:18.179Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-13T07:51:34.619Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"GET","status":200,"duration_ms":1176}
+2026-05-13T08:21:06.021Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-13T08:21:06.076Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-13T08:56:50.551Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":302,"duration_ms":232}
+2026-05-13T09:11:47.980Z {"level":"ERROR","msg":"Failed to read data file","file":"offerings.json"}
+2026-05-13T10:06:51.930Z {"level":"WARN","msg":"Slow query","route":"/charges","duration_ms":1226}
+2026-05-13T10:33:05.162Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-13T10:33:34.173Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":29011}
+2026-05-13T10:55:05.081Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"GET","status":200,"duration_ms":1252}
+2026-05-13T11:01:09.858Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-13T11:01:10.799Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-13T11:49:58.990Z {"level":"WARN","msg":"Slow query","route":"/promos","duration_ms":1376}
+2026-05-13T12:46:48.035Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-13T12:46:48.459Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-13T13:06:04.045Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T13:06:04.535Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T13:21:37.887Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T13:21:38.322Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T14:44:23.673Z {"level":"WARN","msg":"Quota nearing limit","resource":"outbound_emails_per_hour","used":867,"limit":1000}
+2026-05-13T14:55:33.722Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T14:55:34.260Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T15:24:59.300Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"POST","status":302,"duration_ms":691}
+2026-05-13T16:29:24.764Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":1826}
+2026-05-13T17:01:44.305Z {"level":"WARN","msg":"Slow query","route":"/api/checkout/quote","duration_ms":1547}
+2026-05-13T17:38:53.272Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T17:38:53.598Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T17:57:29.557Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":200,"duration_ms":1786}
+2026-05-13T18:19:44.107Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-13T18:19:44.869Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-13T18:21:15.108Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T18:21:15.558Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T18:55:40.638Z {"level":"WARN","msg":"Deprecated route","route":"/api/legacy/clients"}
+2026-05-13T19:33:58.479Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-13T19:33:58.622Z {"level":"ERROR","msg":"Email send failed","clientId":"c_009"}
+2026-05-13T19:51:29.729Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-13T19:51:54.866Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":25137}
+2026-05-13T20:09:24.479Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"POST","status":200,"duration_ms":1152}
+2026-05-13T20:20:07.726Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-13T20:28:23.405Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-13T20:28:23.455Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-13T21:27:45.904Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-13T21:27:46.118Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-13T22:11:17.729Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-13T22:11:18.431Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-13T22:17:47.162Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-13T22:17:47.914Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-13T22:32:24.522Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-13T22:32:25.095Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-13T22:45:50.956Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"GET","status":200,"duration_ms":1785}
+2026-05-13T23:23:34.237Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-13T23:23:34.307Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-14T00:19:31.425Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-14T00:19:32.273Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-14T00:39:45.955Z {"level":"WARN","msg":"Deprecated route","route":"/api/legacy/charges"}
+2026-05-14T00:58:42.351Z {"level":"WARN","msg":"Slow query","route":"/api/checkout/quote","duration_ms":1013}
+2026-05-14T01:10:29.062Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"POST","status":200,"duration_ms":685}
+2026-05-14T01:17:19.839Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-14T01:17:20.209Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-14T01:30:58.061Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-14T01:30:58.153Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-14T01:33:27.211Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-14T01:33:27.605Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-14T02:00:14.210Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-14T02:00:15.073Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-14T02:44:07.507Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-14T02:44:07.671Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-14T03:09:03.933Z {"level":"WARN","msg":"Retrying after backoff","attempt":1,"target":"db-1"}
+2026-05-14T03:21:00.694Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-14T03:21:01.564Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-14T03:25:18.071Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-14T03:25:18.593Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-14T03:54:02.895Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"GET","status":200,"duration_ms":885}
+2026-05-14T03:59:44.715Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-14T03:59:45.195Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-14T04:04:53.436Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-14T04:04:53.963Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-14T04:45:37.691Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"POST","status":200,"duration_ms":474}
+2026-05-14T04:51:50.495Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-14T04:51:51.231Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-14T04:54:08.934Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-14T04:54:09.163Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-14T05:00:26.542Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-14T05:00:27.067Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-14T05:12:41.613Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-14T05:12:42.425Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-14T05:14:48.496Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"GET","status":200,"duration_ms":88}
+2026-05-14T05:22:23.596Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"POST","status":200,"duration_ms":424}
+2026-05-14T05:41:17.069Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-14T05:41:17.461Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-14T05:59:50.038Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-14T05:59:50.283Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-14T06:26:03.268Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-14T06:26:04.045Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-14T06:26:25.385Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-14T06:26:25.751Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-14T06:37:28.111Z {"level":"INFO","msg":"Cache hit","key":"clients:by_partner"}
+2026-05-14T07:30:16.792Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-14T07:30:17.510Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-14T07:39:03.743Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-14T07:57:37.935Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-14T08:10:22.408Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-14T08:10:22.693Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-14T08:11:03.579Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/api/auth/switch","error":"RangeError: Maximum call stack size exceeded"}
+2026-05-14T08:17:03.754Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":200,"duration_ms":445}
+2026-05-14T08:24:46.509Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-14T08:24:46.898Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-14T08:28:55.121Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-14T08:28:55.401Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-14T08:31:25.232Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-14T08:37:30.289Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-14T08:37:31.080Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-14T08:45:01.201Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-14T08:45:01.579Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-14T08:56:55.406Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-14T08:56:56.118Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-14T09:26:56.472Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":908}
+2026-05-14T10:00:14.873Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"GET","status":200,"duration_ms":607}
+2026-05-14T10:34:11.023Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-14T10:34:11.177Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-14T10:42:15.409Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-14T10:42:16.080Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-14T10:48:09.037Z {"level":"WARN","msg":"Config drift detected","key":"rate_limits.email"}
+2026-05-14T11:07:46.470Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-14T11:49:09.420Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-14T11:49:10.021Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-14T12:19:56.849Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-14T12:19:57.751Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-14T12:35:07.599Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-14T12:35:08.115Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-14T12:43:34.465Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-14T12:43:34.820Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-14T13:47:27.242Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-14T13:47:27.941Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-14T14:03:22.053Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"POST","status":302,"duration_ms":72}
+2026-05-14T14:14:20.530Z {"level":"ERROR","msg":"Failed to read data file","file":"offerings.json"}
+2026-05-14T14:42:56.666Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-14T14:42:56.814Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-14T15:42:18.704Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-14T15:42:19.623Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-14T15:50:52.080Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-14T15:50:52.493Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-14T17:19:02.171Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-14T17:19:03.026Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-14T17:21:17.272Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-14T17:21:17.831Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-14T17:26:53.423Z {"level":"WARN","msg":"Slow query","route":"/api/clients","duration_ms":1292}
+2026-05-14T17:48:38.927Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-14T17:48:39.233Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-14T18:05:18.600Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-14T18:05:18.654Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-14T18:56:43.131Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-14T18:56:43.588Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-14T20:12:15.847Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-14T20:12:16.605Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-14T20:17:49.023Z {"level":"INFO","msg":"Cache hit","key":"offerings:list"}
+2026-05-14T20:28:13.018Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-14T20:28:13.574Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-14T20:38:27.614Z {"level":"WARN","msg":"Retrying after backoff","attempt":3,"target":"fakemail"}
+2026-05-14T20:53:34.999Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-14T20:53:59.510Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":24511}
+2026-05-14T21:07:01.393Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-14T21:07:01.767Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-14T21:50:10.856Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-14T21:50:11.600Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-14T22:08:06.324Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-14T22:08:06.461Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-14T22:13:22.109Z {"level":"INFO","msg":"Cache hit","key":"offerings:list"}
+2026-05-14T22:14:02.471Z {"level":"WARN","msg":"Slow query","route":"/api/checkout/quote","duration_ms":2118}
+2026-05-14T23:13:08.561Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-14T23:13:09.323Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-15T00:44:18.337Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-15T00:44:18.899Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-15T00:45:40.279Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-15T00:45:41.078Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-15T00:58:18.751Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-15T00:58:18.878Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-15T01:05:33.282Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-15T01:05:34.179Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-15T01:38:34.088Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-15T01:38:34.669Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-15T02:01:10.734Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-15T02:01:11.658Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-15T02:17:12.920Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-15T02:17:13.375Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-15T03:27:25.565Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-15T03:27:26.032Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-15T04:47:10.491Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-15T04:47:11.373Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-15T05:38:39.496Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-15T05:38:39.749Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-15T05:45:35.317Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-15T05:45:35.940Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-15T06:18:29.106Z {"level":"INFO","msg":"Cache miss","key":"offerings:list"}
+2026-05-15T06:44:37.807Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-15T06:44:37.982Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-15T06:54:07.171Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":2739}
+2026-05-15T06:55:36.401Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-15T06:55:36.593Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-15T07:26:22.970Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-15T07:26:23.592Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-15T09:24:55.031Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-15T09:30:03.634Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-15T09:30:04.537Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-15T10:04:49.319Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-15T10:04:49.732Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-15T10:05:50.872Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-15T10:05:51.062Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-15T10:09:00.417Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-15T10:09:01.266Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-15T10:25:31.665Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-15T10:25:31.969Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-15T10:34:45.236Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-15T10:34:59.452Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":14216}
+2026-05-15T10:38:14.937Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-15T11:03:29.338Z {"level":"INFO","msg":"Job started","job":"metrics_rollup"}
+2026-05-15T11:03:56.587Z {"level":"INFO","msg":"Job completed","job":"metrics_rollup","duration_ms":27249}
+2026-05-15T11:24:57.228Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-15T11:24:58.072Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-15T11:36:12.921Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":200,"duration_ms":1022}
+2026-05-15T12:14:53.730Z {"level":"INFO","msg":"Cache hit","key":"promos:list"}
+2026-05-15T12:23:47.006Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-15T12:23:47.227Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-15T12:29:26.508Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"GET","status":200,"duration_ms":1013}
+2026-05-15T13:07:09.876Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-15T13:07:10.334Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-15T13:23:39.991Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-15T13:23:40.746Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-15T14:06:48.255Z {"level":"INFO","msg":"Cache miss","key":"promos:list"}
+2026-05-15T14:28:16.625Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-15T14:28:17.149Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-15T15:56:58.544Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-15T15:56:59.289Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-15T16:34:41.329Z {"level":"WARN","msg":"Slow query","route":"/charges","duration_ms":1881}
+2026-05-15T16:57:06.920Z {"level":"INFO","msg":"Cache hit","key":"charges:recent"}
+2026-05-15T16:59:39.115Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-15T16:59:39.321Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-15T18:09:55.695Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-15T18:30:27.617Z {"level":"INFO","msg":"Cache hit","key":"offerings:list"}
+2026-05-15T18:33:03.315Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"POST","status":200,"duration_ms":798}
+2026-05-15T19:20:12.387Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-15T19:20:13.074Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-15T19:28:41.401Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-15T19:28:42.067Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-15T19:34:04.449Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-15T19:34:04.867Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-15T20:19:05.793Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"GET","status":200,"duration_ms":828}
+2026-05-15T20:25:16.191Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-15T20:25:16.468Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-15T20:39:33.333Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-15T20:39:33.560Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-15T20:39:51.524Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-15T21:26:58.221Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"GET","status":200,"duration_ms":1798}
+2026-05-15T21:29:32.078Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-15T21:29:32.146Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-15T22:03:29.334Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-15T22:03:59.262Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":29928}
+2026-05-15T22:06:05.828Z {"level":"WARN","msg":"Slow query","route":"/clients/[id]","duration_ms":1769}
+2026-05-15T22:28:39.538Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-15T22:28:39.668Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-15T23:24:40.344Z {"level":"WARN","msg":"Slow query","route":"/checkout","duration_ms":2358}
+2026-05-15T23:31:49.637Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-15T23:31:50.057Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-15T23:34:25.208Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"GET","status":404,"duration_ms":1284}
+2026-05-15T23:49:31.536Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-15T23:49:31.664Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-16T00:35:10.904Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-16T00:35:11.133Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-16T01:20:26.199Z {"level":"INFO","msg":"Job started","job":"metrics_rollup"}
+2026-05-16T01:20:31.947Z {"level":"INFO","msg":"Job completed","job":"metrics_rollup","duration_ms":5748}
+2026-05-16T02:27:15.313Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-16T02:27:16.053Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-16T02:27:46.341Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-16T02:27:46.919Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-16T02:32:24.737Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-16T02:32:25.475Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-16T03:13:56.283Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-16T03:13:56.953Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-16T03:29:18.768Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-16T03:29:19.030Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-16T03:33:18.967Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"GET","status":200,"duration_ms":1720}
+2026-05-16T03:53:39.513Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"GET","status":404,"duration_ms":745}
+2026-05-16T05:22:28.869Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"GET","status":302,"duration_ms":1768}
+2026-05-16T05:24:53.657Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-16T05:24:53.947Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-16T05:48:14.229Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-16T05:48:14.590Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-16T06:37:46.086Z {"level":"WARN","msg":"Config drift detected","key":"smtp.host"}
+2026-05-16T07:33:13.151Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"GET","status":200,"duration_ms":1567}
+2026-05-16T07:46:15.497Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-16T07:46:16.282Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-16T08:10:04.662Z {"level":"ERROR","msg":"Failed to read data file","file":"promos.json"}
+2026-05-16T08:12:12.131Z {"level":"ERROR","msg":"Failed to read data file","file":"charges.json"}
+2026-05-16T08:29:01.501Z {"level":"ERROR","msg":"Database connection lost","host":"db-1","attempt":3}
+2026-05-16T08:36:21.168Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-16T08:36:21.457Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-16T10:22:49.649Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-16T10:22:49.800Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-16T10:35:32.903Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-16T10:35:33.248Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-16T10:46:22.005Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-16T10:46:22.434Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-16T11:21:36.799Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-16T11:21:37.332Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-16T11:31:16.096Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-16T11:31:16.682Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-16T11:32:31.385Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-16T11:32:32.231Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-16T11:48:04.286Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-16T11:48:04.384Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-16T12:49:56.920Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"POST","status":200,"duration_ms":990}
+2026-05-16T15:19:12.715Z {"level":"WARN","msg":"Slow query","route":"/offerings","duration_ms":1521}
+2026-05-16T15:31:48.413Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-16T15:31:48.829Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-16T15:47:36.252Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-16T15:47:36.718Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-16T18:25:21.598Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-16T18:25:22.371Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-16T18:35:31.257Z {"level":"WARN","msg":"Slow query","route":"/clients/[id]","duration_ms":1878}
+2026-05-16T18:42:12.497Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-16T18:42:13.201Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-16T19:12:16.497Z {"level":"WARN","msg":"Config drift detected","key":"smtp.host"}
+2026-05-16T19:14:39.410Z {"level":"ERROR","msg":"Worker crashed","worker":"nightly_reminder_sweep","pid":28271}
+2026-05-16T19:48:17.964Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-16T19:48:18.023Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-16T20:07:34.136Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-16T20:07:34.334Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-16T20:31:06.625Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-16T20:31:07.070Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-16T20:48:58.084Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-16T20:48:58.535Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-16T21:36:39.991Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":200,"duration_ms":686}
+2026-05-16T21:39:37.451Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-16T21:39:38.310Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-16T21:50:29.580Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"POST","status":204,"duration_ms":718}
+2026-05-16T22:04:40.064Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"POST","status":200,"duration_ms":1595}
+2026-05-16T22:30:13.807Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-16T22:30:14.468Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-16T22:38:26.886Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-16T22:38:27.476Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-16T22:43:53.543Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-16T22:44:02.319Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":8776}
+2026-05-16T23:22:20.020Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-16T23:22:20.612Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-16T23:45:16.476Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-16T23:45:16.822Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-16T23:53:47.286Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-16T23:53:47.969Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-17T00:05:49.243Z {"level":"WARN","msg":"Slow query","route":"/api/promos","duration_ms":1511}
+2026-05-17T00:09:16.087Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-17T00:09:16.528Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-17T01:55:48.253Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"GET","status":200,"duration_ms":851}
+2026-05-17T02:28:35.395Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-17T02:28:36.232Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-17T02:43:59.730Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-17T02:43:59.790Z {"level":"ERROR","msg":"Email send failed","clientId":"c_009"}
+2026-05-17T02:54:40.699Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-17T02:54:41.183Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-17T03:09:00.344Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-17T03:09:01.092Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-17T04:27:10.434Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-17T04:27:10.672Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-17T04:37:07.085Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T04:37:07.174Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T04:44:29.134Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"POST","status":200,"duration_ms":555}
+2026-05-17T05:29:14.688Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-17T05:29:14.851Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-17T05:38:32.300Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T05:38:32.710Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T06:29:05.817Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T06:29:06.302Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T07:12:56.495Z {"level":"INFO","msg":"Request handled","route":"/promos","method":"GET","status":200,"duration_ms":1631}
+2026-05-17T07:17:56.953Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-17T07:17:57.675Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-17T07:56:22.291Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-17T07:56:23.201Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-17T08:21:44.237Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-17T08:21:44.724Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-17T09:32:46.890Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"GET","status":404,"duration_ms":779}
+2026-05-17T09:39:10.788Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T09:39:11.413Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T10:05:00.822Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"POST","status":302,"duration_ms":1825}
+2026-05-17T10:09:43.394Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-17T10:09:43.612Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-17T10:13:35.753Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T10:13:36.681Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T10:29:50.847Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-17T10:29:51.631Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-17T10:32:46.503Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-17T10:33:30.026Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":43523}
+2026-05-17T10:49:59.053Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-17T10:49:59.387Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-17T11:22:35.659Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-17T11:22:35.777Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-17T12:01:09.954Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-17T12:01:10.415Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-17T12:01:24.070Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-17T12:01:24.934Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-17T12:31:34.962Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-17T12:31:35.733Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-17T12:46:04.112Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"GET","status":302,"duration_ms":284}
+2026-05-17T13:27:17.146Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"GET","status":404,"duration_ms":1644}
+2026-05-17T15:25:11.018Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"GET","status":200,"duration_ms":219}
+2026-05-17T15:40:13.062Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-17T15:40:13.351Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-17T15:41:50.996Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-17T15:41:51.848Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-17T16:19:34.230Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-17T16:19:34.543Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-17T17:06:42.603Z {"level":"WARN","msg":"Slow query","route":"/charges","duration_ms":2020}
+2026-05-17T17:07:16.790Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-17T17:07:16.993Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-17T17:36:46.185Z {"level":"INFO","msg":"Cache hit","key":"charges:recent"}
+2026-05-17T18:24:09.928Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-17T18:24:10.126Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-17T18:46:23.447Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-17T18:46:24.108Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-17T19:01:34.983Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-17T19:01:35.438Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-17T19:19:38.019Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-17T19:19:38.097Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-17T19:20:38.309Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-17T19:41:04.692Z {"level":"INFO","msg":"Request handled","route":"/checkout","method":"POST","status":200,"duration_ms":105}
+2026-05-17T20:39:36.809Z {"level":"INFO","msg":"Job started","job":"nightly_reminder_sweep"}
+2026-05-17T20:39:41.181Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-17T20:39:41.971Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":790}
+2026-05-17T20:40:18.911Z {"level":"INFO","msg":"Job completed","job":"nightly_reminder_sweep","duration_ms":42102}
+2026-05-17T20:43:56.538Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T20:43:56.725Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T21:08:29.022Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T21:08:29.640Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T21:18:18.385Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-17T21:18:18.769Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-17T21:42:58.381Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/quote","method":"POST","status":200,"duration_ms":1562}
+2026-05-17T21:43:27.991Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-17T21:43:28.329Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-17T22:08:54.934Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"POST","status":404,"duration_ms":837}
+2026-05-17T23:09:13.385Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-17T23:09:14.319Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-17T23:09:56.972Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-17T23:09:57.269Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-17T23:23:29.663Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_ironpeak"}
+2026-05-17T23:49:12.672Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_010","partnerId":"studio_ironpeak","email":"alex@example.com"}
+2026-05-17T23:49:13.357Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_010","email":"alex@example.com"}
+2026-05-18T00:20:56.864Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_010","partnerId":"studio_ironpeak","email":"alex@example.com"}
+2026-05-18T00:20:57.236Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_010","email":"alex@example.com"}
+2026-05-18T00:51:25.545Z {"level":"INFO","msg":"Cache hit","key":"offerings:list"}
+2026-05-18T01:02:08.774Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-18T01:02:09.093Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-18T01:19:50.908Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T01:19:51.014Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T01:22:31.845Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_010","partnerId":"studio_ironpeak","email":"alex@example.com"}
+2026-05-18T01:22:32.343Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_010","email":"alex@example.com"}
+2026-05-18T01:37:19.157Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T01:37:19.877Z {"level":"ERROR","msg":"Email send failed","clientId":"c_003"}
+2026-05-18T01:40:15.445Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-18T01:40:16.108Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-18T01:41:43.223Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-18T01:41:43.390Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-18T01:46:32.770Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T01:46:33.010Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T01:49:50.764Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T01:49:50.931Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T01:56:10.373Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T01:56:10.480Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T02:16:43.635Z {"level":"WARN","msg":"Deprecated route","route":"/api/v1/promos"}
+2026-05-18T02:18:16.896Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T02:18:17.565Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T02:23:15.733Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T02:23:16.567Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T02:43:44.722Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T02:43:45.307Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T02:45:31.527Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"POST","status":204,"duration_ms":224}
+2026-05-18T03:16:53.568Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-18T03:16:53.994Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-18T03:44:28.125Z {"level":"INFO","msg":"Request handled","route":"/clients","method":"GET","status":200,"duration_ms":628}
+2026-05-18T04:02:04.199Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T04:02:04.616Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T04:37:06.475Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-18T04:37:07.299Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-18T04:42:38.009Z {"level":"ERROR","msg":"Charge rejected","reason":"card_declined","chargeId":"chg_87301e5311"}
+2026-05-18T04:56:16.200Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-18T04:56:16.680Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-18T05:13:00.918Z {"level":"WARN","msg":"Slow query","route":"/clients","duration_ms":1071}
+2026-05-18T05:22:32.730Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-18T05:22:33.436Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-18T06:16:06.043Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T06:16:06.487Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T06:34:33.261Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T06:34:33.944Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T06:43:25.445Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T06:43:25.762Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T06:51:39.107Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T06:51:39.171Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T07:33:25.192Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"GET","status":200,"duration_ms":72}
+2026-05-18T08:10:30.210Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-18T08:10:30.474Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-18T08:15:21.998Z {"level":"ERROR","msg":"Charge rejected","reason":"expired_card","chargeId":"chg_589a7ae904"}
+2026-05-18T08:53:49.573Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-18T08:54:16.041Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":26468}
+2026-05-18T09:11:53.166Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-18T09:11:53.668Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-18T09:22:20.261Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-18T09:22:20.543Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-18T09:26:49.696Z {"level":"INFO","msg":"Request handled","route":"/api/clients","method":"GET","status":404,"duration_ms":494}
+2026-05-18T09:54:56.706Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T09:54:57.215Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T09:56:32.350Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-18T09:56:32.784Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-18T10:21:06.871Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-18T10:21:07.136Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-18T10:27:58.368Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T10:27:58.445Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T10:31:02.078Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T10:31:02.208Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T10:32:09.046Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T10:32:09.733Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T10:43:52.105Z {"level":"WARN","msg":"Quota nearing limit","resource":"outbound_emails_per_hour","used":872,"limit":1000}
+2026-05-18T11:00:55.703Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-18T11:00:55.903Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-18T11:51:54.770Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-18T11:51:54.949Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-18T11:59:35.077Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T11:59:35.931Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T12:53:46.808Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T12:53:47.311Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T13:44:02.207Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T13:44:03.016Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T14:05:23.485Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T14:05:23.830Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T14:40:24.313Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-18T14:40:24.931Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-18T15:08:08.545Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-18T15:08:08.947Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-18T15:44:38.234Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T15:44:38.533Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T15:47:17.015Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/submit","method":"POST","status":200,"duration_ms":478}
+2026-05-18T15:55:40.980Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-18T16:25:57.849Z {"level":"INFO","msg":"Request handled","route":"/api/checkout/quote","method":"GET","status":404,"duration_ms":1314}
+2026-05-18T17:24:55.394Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-18T17:24:56.220Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-18T17:57:37.808Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_010","partnerId":"studio_ironpeak","email":"alex@example.com"}
+2026-05-18T17:57:38.075Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_010","email":"alex@example.com"}
+2026-05-18T17:59:34.551Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T17:59:35.154Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T18:06:44.984Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"POST","status":302,"duration_ms":125}
+2026-05-18T18:20:24.870Z {"level":"ERROR","msg":"Database connection lost","host":"db-1","attempt":1}
+2026-05-18T18:24:34.516Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-18T18:24:35.160Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-18T18:34:20.268Z {"level":"INFO","msg":"Request handled","route":"/api/clients","method":"GET","status":204,"duration_ms":711}
+2026-05-18T18:49:56.972Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-18T18:49:57.096Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-18T19:00:34.669Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T19:00:34.917Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T19:23:11.224Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-18T19:23:11.328Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-18T19:23:21.774Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"GET","status":200,"duration_ms":794}
+2026-05-18T19:25:48.132Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-18T19:25:48.983Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-18T20:57:40.731Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_008","partnerId":"studio_sunrise","email":"alex@example.com"}
+2026-05-18T20:57:41.184Z {"level":"WARN","msg":"Skipping email: recipient opted out","clientId":"c_008","email":"alex@example.com"}
+2026-05-18T21:22:39.714Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-18T21:22:40.482Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-18T21:27:38.771Z {"level":"INFO","msg":"Request handled","route":"/offerings","method":"POST","status":200,"duration_ms":687}
+2026-05-18T22:00:37.005Z {"level":"WARN","msg":"Slow query","route":"/offerings","duration_ms":1174}
+2026-05-18T22:03:20.653Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T22:03:21.209Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T22:33:03.081Z {"level":"WARN","msg":"Slow query","route":"/api/checkout/quote","duration_ms":1080}
+2026-05-18T23:12:20.617Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-18T23:12:21.131Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-18T23:39:44.157Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-18T23:39:44.260Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-19T00:09:09.196Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-19T00:09:10.124Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-19T00:28:43.605Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-19T00:28:44.175Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}
+2026-05-19T00:52:14.690Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-19T00:52:15.576Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-19T00:58:25.324Z {"level":"INFO","msg":"Cache miss","key":"clients:by_partner"}
+2026-05-19T01:14:49.530Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-19T01:14:50.153Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-19T01:37:56.222Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-19T01:37:56.927Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-19T02:03:07.047Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-19T02:03:07.531Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-19T02:07:27.730Z {"level":"ERROR","msg":"Worker crashed","worker":"session_gc","pid":26813}
+2026-05-19T02:08:12.218Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-19T02:08:12.537Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-19T02:19:47.959Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-19T02:19:48.560Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-19T02:51:33.140Z {"level":"INFO","msg":"Request handled","route":"/clients/[id]","method":"POST","status":200,"duration_ms":1014}
+2026-05-19T03:32:16.509Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-19T03:32:17.103Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-19T04:20:46.821Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-19T04:20:47.421Z {"level":"ERROR","msg":"Email send failed","clientId":"c_002"}
+2026-05-19T05:40:43.145Z {"level":"WARN","msg":"Slow query","route":"/offerings","duration_ms":1344}
+2026-05-19T05:57:39.487Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-19T05:57:39.641Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-19T06:44:20.027Z {"level":"ERROR","msg":"Validation error","route":"/api/checkout/submit","field":"offeringId"}
+2026-05-19T07:24:36.206Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-19T07:24:36.317Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-19T08:28:00.241Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-19T08:28:00.444Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-19T08:44:53.274Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-19T08:44:53.679Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-19T09:11:54.538Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-19T09:11:55.435Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-19T09:30:44.432Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-19T09:30:45.333Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-19T10:18:10.394Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-19T10:18:10.580Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-19T10:27:06.595Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-19T10:27:06.671Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-19T10:27:10.290Z {"level":"ERROR","msg":"Failed to read data file","file":"offerings.json"}
+2026-05-19T10:45:55.798Z {"level":"INFO","msg":"Request handled","route":"/api/auth/switch","method":"GET","status":204,"duration_ms":259}
+2026-05-19T11:01:27.850Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-19T11:01:28.636Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-19T11:19:14.692Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-19T11:39:22.191Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-19T11:39:22.401Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-19T12:05:40.959Z {"level":"INFO","msg":"Cache miss","key":"offerings:list"}
+2026-05-19T12:20:46.824Z {"level":"WARN","msg":"Slow query","route":"/api/clients","duration_ms":1837}
+2026-05-19T12:43:25.268Z {"level":"INFO","msg":"Job started","job":"session_gc"}
+2026-05-19T12:43:47.633Z {"level":"INFO","msg":"Job completed","job":"session_gc","duration_ms":22365}
+2026-05-19T12:48:38.888Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-19T12:48:39.197Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-19T13:14:24.924Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-19T13:14:25.742Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-19T13:21:56.396Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-19T13:21:56.500Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-19T14:01:43.340Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-19T14:01:44.147Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-19T15:16:06.006Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_006","partnerId":"studio_ironpeak","email":"olivia@example.com"}
+2026-05-19T15:16:06.227Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"olivia@example.com"}
+2026-05-19T15:17:26.008Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-19T15:17:26.244Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-19T15:30:19.838Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_003","partnerId":"studio_sunrise","email":"priya@example.com"}
+2026-05-19T15:30:20.154Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"priya@example.com"}
+2026-05-19T15:39:02.700Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_007","partnerId":"studio_ironpeak","email":"daniel@example.com"}
+2026-05-19T15:39:02.780Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"daniel@example.com"}
+2026-05-19T15:43:41.314Z {"level":"INFO","msg":"Auth session refreshed","partnerId":"studio_sunrise"}
+2026-05-19T16:03:21.487Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-19T16:03:21.985Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-19T16:06:34.887Z {"level":"INFO","msg":"Job started","job":"stale_cart_cleanup"}
+2026-05-19T16:07:02.624Z {"level":"INFO","msg":"Job completed","job":"stale_cart_cleanup","duration_ms":27737}
+2026-05-19T16:28:17.489Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_002","partnerId":"studio_sunrise","email":"mike@example.com"}
+2026-05-19T16:28:18.273Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"mike@example.com"}
+2026-05-19T16:56:21.726Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_004","partnerId":"studio_sunrise","email":"josé@yoga.mx"}
+2026-05-19T16:56:22.255Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"josé@yoga.mx"}
+2026-05-19T16:59:41.588Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-19T16:59:42.438Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-19T17:03:29.412Z {"level":"INFO","msg":"Request handled","route":"/charges","method":"GET","status":200,"duration_ms":414}
+2026-05-19T17:14:01.358Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_001","partnerId":"studio_sunrise","email":"sarah@example.com"}
+2026-05-19T17:14:01.864Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"sarah@example.com"}
+2026-05-19T17:16:22.063Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_005","partnerId":"studio_sunrise","email":"diane@example.com"}
+2026-05-19T17:16:22.123Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"diane@example.com"}
+2026-05-19T17:42:36.988Z {"level":"INFO","msg":"Request handled","route":"/api/promos","method":"GET","status":302,"duration_ms":2057}
+2026-05-19T17:58:19.922Z {"level":"WARN","msg":"Slow query","route":"/offerings","duration_ms":1384}
+2026-05-19T19:39:36.947Z {"level":"ERROR","msg":"Unhandled exception in handler","route":"/api/clients","error":"SyntaxError: Unexpected token < in JSON at position 0"}
+2026-05-19T19:43:13.693Z {"level":"INFO","msg":"Sending confirmation email","clientId":"c_009","partnerId":"studio_ironpeak","email":"ethan@example.com"}
+2026-05-19T19:43:14.366Z {"level":"INFO","msg":"Email sent","provider":"fakemail","status":200,"email":"ethan@example.com"}

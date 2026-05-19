@@ -13,9 +13,14 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { db } from "@/lib/db";
+import { getCurrentPartnerId } from "@/lib/auth";
 
 export default async function PromosPage() {
-  const [promos, offerings] = await Promise.all([db.promos.all(), db.offerings.all()]);
+  const partnerId = await getCurrentPartnerId();
+  const [promos, offerings] = await Promise.all([
+    db.promos.all(partnerId),
+    db.offerings.all(partnerId),
+  ]);
   const offeringName = (id: string) => offerings.find((o) => o.id === id)?.name ?? id;
 
   return (

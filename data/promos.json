@@ -1,4 +1,14 @@
 [
-  { "code": "SUMMER25", "discountPercent": 25, "appliesTo": ["of-pack-001"] },
-  { "code": "INTRO10", "discountPercent": 10, "appliesTo": ["of-pack-002", "of-class-001"] }
+  {
+    "code": "SUMMER25",
+    "partnerId": "studio_sunrise",
+    "discountPercent": 25,
+    "appliesTo": ["of-pack-001"]
+  },
+  {
+    "code": "INTRO10",
+    "partnerId": "studio_sunrise",
+    "discountPercent": 10,
+    "appliesTo": ["of-pack-002", "of-class-001"]
+  }
 ]

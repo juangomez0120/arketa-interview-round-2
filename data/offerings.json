@@ -1,6 +1,44 @@
 [
-  { "id": "of-pack-001", "name": "10-Class Pack", "type": "classPack", "price": 20000 },
-  { "id": "of-pack-002", "name": "Drop-In Class", "type": "class", "price": 3000 },
-  { "id": "of-pack-003", "name": "Unlimited Month", "type": "classPack", "price": 25000 },
-  { "id": "of-class-001", "name": "Single Workshop", "type": "class", "price": 5000 }
+  {
+    "id": "of-pack-001",
+    "partnerId": "studio_sunrise",
+    "name": "10-Class Pack",
+    "type": "classPack",
+    "price": 20000
+  },
+  {
+    "id": "of-pack-002",
+    "partnerId": "studio_sunrise",
+    "name": "Drop-In Class",
+    "type": "class",
+    "price": 3000
+  },
+  {
+    "id": "of-pack-003",
+    "partnerId": "studio_sunrise",
+    "name": "Unlimited Month",
+    "type": "classPack",
+    "price": 25000
+  },
+  {
+    "id": "of-class-001",
+    "partnerId": "studio_sunrise",
+    "name": "Single Workshop",
+    "type": "class",
+    "price": 5000
+  },
+  {
+    "id": "of-pack-004",
+    "partnerId": "studio_ironpeak",
+    "name": "Monthly Membership",
+    "type": "classPack",
+    "price": 18000
+  },
+  {
+    "id": "of-class-002",
+    "partnerId": "studio_ironpeak",
+    "name": "Personal Training Session",
+    "type": "class",
+    "price": 8000
+  }
 ]

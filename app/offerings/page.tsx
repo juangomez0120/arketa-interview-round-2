@@ -10,13 +10,15 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { db } from "@/lib/db";
+import { getCurrentPartnerId } from "@/lib/auth";
 
 function money(cents: number): string {
   return `$${(cents / 100).toFixed(2)}`;
 }
 
 export default async function OfferingsPage() {
-  const offerings = await db.offerings.all();
+  const partnerId = await getCurrentPartnerId();
+  const offerings = await db.offerings.all(partnerId);
 
   return (
     <div>

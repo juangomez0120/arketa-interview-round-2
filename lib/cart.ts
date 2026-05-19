@@ -4,9 +4,10 @@ import type { Cart, CartProduct } from "./types";
 export async function buildCart(input: {
   clientId: string;
   offeringId: string;
+  partnerId: string;
   quantity?: number;
 }): Promise<Cart> {
-  const offering = await db.offerings.findById(input.offeringId);
+  const offering = await db.offerings.findById(input.offeringId, input.partnerId);
   if (!offering) throw new Error(`Offering ${input.offeringId} not found`);
 
   const quantity = Math.max(1, Math.floor(input.quantity ?? 1));

@@ -1,12 +1,14 @@
 import { db } from "@/lib/db";
+import { getCurrentPartnerId } from "@/lib/auth";
 import { PageHero } from "@/components/page-hero";
 import CheckoutForm from "./CheckoutForm";
 
 export default async function CheckoutPage() {
+  const partnerId = await getCurrentPartnerId();
   const [clients, offerings, promos] = await Promise.all([
-    db.clients.all(),
-    db.offerings.all(),
-    db.promos.all(),
+    db.clients.all(partnerId),
+    db.offerings.all(partnerId),
+    db.promos.all(partnerId),
   ]);
 
   return (

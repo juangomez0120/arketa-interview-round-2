@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { PageHero } from "@/components/page-hero";
 import { db } from "@/lib/db";
+import { getCurrentPartnerId } from "@/lib/auth";
 
 function money(cents: number): string {
   return `$${(cents / 100).toFixed(2)}`;
@@ -20,7 +21,11 @@ const fmt = new Intl.DateTimeFormat("en-US", {
 });
 
 export default async function ChargesPage() {
-  const [charges, clients] = await Promise.all([db.charges.all(), db.clients.all()]);
+  const partnerId = await getCurrentPartnerId();
+  const [charges, clients] = await Promise.all([
+    db.charges.all(partnerId),
+    db.clients.all(partnerId),
+  ]);
   const clientLookup = new Map(clients.map((c) => [c.id, c]));
   const sorted = [...charges].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 

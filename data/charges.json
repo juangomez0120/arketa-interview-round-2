@@ -51,5 +51,39 @@
     "total": 20000,
     "promoCode": "SUMMER25",
     "createdAt": "2026-05-10T11:08:31.000Z"
+  },
+  {
+    "id": "chg_183ed6ef-1",
+    "partnerId": "studio_sunrise",
+    "clientId": "c_008",
+    "items": [
+      {
+        "productId": "b9c615f6-fc9a-4223-a19b-0854c79bdc48",
+        "type": "classPack",
+        "price": 20000
+      }
+    ],
+    "subtotal": 20000,
+    "discount": 0,
+    "total": 20000,
+    "promoCode": null,
+    "createdAt": "2026-05-19T16:36:01.496Z"
+  },
+  {
+    "id": "chg_b4ce37a2-f",
+    "partnerId": "studio_sunrise",
+    "clientId": "c_005",
+    "items": [
+      {
+        "productId": "58b691ff-1624-4296-9f8f-bca4e8eba989",
+        "type": "classPack",
+        "price": 20000
+      }
+    ],
+    "subtotal": 20000,
+    "discount": 0,
+    "total": 20000,
+    "promoCode": null,
+    "createdAt": "2026-05-19T16:36:30.628Z"
   }
 ]

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Plus } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -13,6 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { db } from "@/lib/db";
+import { getCurrentPartnerId } from "@/lib/auth";
 
 const fmtDate = new Intl.DateTimeFormat("en-US", {
   month: "short",
@@ -21,23 +22,14 @@ const fmtDate = new Intl.DateTimeFormat("en-US", {
 });
 
 export default async function ClientsPage() {
-  const clients = await db.clients.all();
+  const partnerId = await getCurrentPartnerId();
+  const clients = await db.clients.all(partnerId);
   const sorted = [...clients].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
 
   return (
     <div>
-      <PageHero
-        title="Clients"
-        description="Studio members."
-        actions={
-          <Button asChild>
-            <Link href="/clients/new">
-              <Plus /> New client
-            </Link>
-          </Button>
-        }
-      />
+      <PageHero title="Clients" description="Studio members." />
 
       <Card className="overflow-hidden">
         <Table>

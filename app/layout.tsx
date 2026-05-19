@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, DM_Sans, JetBrains_Mono } from "next/font/google";
 import { SidebarNav } from "@/components/sidebar-nav";
+import { PartnerSwitcher } from "@/components/partner-switcher";
+import { db } from "@/lib/db";
+import { getCurrentPartnerId } from "@/lib/auth";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -28,9 +31,14 @@ export const metadata: Metadata = {
   description: "Operations console for Arketa Studio.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const [partners, currentPartnerId] = await Promise.all([
+    db.partners.all(),
+    getCurrentPartnerId(),
+  ]);
+
   return (
     <html
       lang="en"
@@ -42,6 +50,10 @@ export default function RootLayout({
             <div className="px-6 pt-7 pb-6">
               <div className="font-display text-2xl italic leading-none">Arketa</div>
             </div>
+            <PartnerSwitcher
+              partners={partners}
+              currentPartnerId={currentPartnerId}
+            />
             <div className="py-2 flex-1">
               <SidebarNav />
             </div>

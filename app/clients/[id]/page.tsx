@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PageHero } from "@/components/page-hero";
 import { db } from "@/lib/db";
+import { getCurrentPartnerId } from "@/lib/auth";
+import UnsubscribeToggle from "./UnsubscribeToggle";
 
 const fmt = new Intl.DateTimeFormat("en-US", {
   month: "long",
@@ -18,8 +20,15 @@ export default async function ClientProfilePage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const client = await db.clients.findById(id);
+  const partnerId = await getCurrentPartnerId();
+  const client = await db.clients.findById(id, partnerId);
   if (!client) notFound();
+
+  const suppression = await db.suppressions.findByEmailAndPartner(
+    client.email,
+    partnerId,
+  );
+  const unsubscribed = suppression !== null;
 
   return (
     <div>
@@ -48,6 +57,14 @@ export default async function ClientProfilePage({
             <dd className="mt-1.5">{fmt.format(new Date(client.createdAt))}</dd>
           </div>
         </dl>
+      </Card>
+
+      <Card className="p-6 mt-4">
+        <div className="eyebrow mb-3">Email subscription</div>
+        <UnsubscribeToggle
+          clientId={client.id}
+          initialUnsubscribed={unsubscribed}
+        />
       </Card>
     </div>
   );

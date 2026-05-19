@@ -19,14 +19,14 @@ That's it — no environment variables, no external services.
 
 ```
 app/         pages and API routes (Next.js App Router)
-lib/         shared code — db helpers, cart, promo, email service
+lib/         shared code — db helpers, auth, cart, promo, email service
 data/        seed data, stored as JSON files
 logs.txt     structured app logs (one JSON line per entry)
 ```
 
 ## What's already set up — and what isn't
 
-- **Auth is mocked.** Assume the logged-in user is the studio owner.
+- **Auth is mocked.** Assume the logged-in user is the studio owner. Two studios are seeded — switch between them via the dropdown in the sidebar.
 - **No real database.** Records live in `data/*.json` and are mutated in place by `lib/db.ts`.
 - **Emails don't actually send.**
 - **No payment processor.**
@@ -46,19 +46,3 @@ What is **not** allowed is handing the problem off to the model with a blind pro
 - Communicating the fix in plain customer language at the end.
 
 ---
-
-## Customer Reports
-
-### Report 1
-
-> **From:** Sarah (Arketa Studio owner)
-> **Subject:** Some clients aren't getting any emails
->
-> So a bunch of our newer members have been telling me they never got their welcome email or any reminders. I checked spam — nothing. But other clients are getting emails just fine. I asked our developer where to find logs and she pointed me at `logs.txt` in our repo, I've left it for you. I'm worried we're going to lose new members if they think we ghost them after signup. Please look into this asap.
-
-### Report 2
-
-> **From:** Sarah (Arketa Studio owner)
-> **Subject:** My promo codes aren't actually discounting anything??
->
-> Hey — I set up a 25% off promo code for our 10-Class Pack (code SUMMER25). I tested it myself and it looked fine — when I went through checkout, it showed the discount, said the total was $150 instead of $200, all good. But two clients have now messaged me saying their card was charged the full $200. I checked our charges file and they're right, $200 each, but the promo code IS recorded on the charge. So the code "applied" but didn't apply?? I'm going to look so unprofessional refunding all of these manually. Please figure out what's going on.
